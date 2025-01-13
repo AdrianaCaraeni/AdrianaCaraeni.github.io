@@ -51,39 +51,38 @@ const Experience = () => {
         <div className="self-stretch overflow-hidden flex flex-col items-start justify-start py-10 px-6 box-border gap-[32px] max-w-full text-center text-5xl mq825:gap-[16px] mq825:pt-5 mq825:pb-5 mq450:pl-0 mq450:pr-0 mq825:box-border mq1425:pt-[26px] mq1425:pb-[26px] mq1425:box-border">
           
           <ExperienceComponent
-            Title="Robotics Software Engineer Intern @ MOLG.Inc"
-            Date="June 2024 – Present"
-            Text1="Designed and implemented an end-to-end custom collision detection framework for ABB IRB-1300 arm system, successfully integrating it into the v2.0 customer facing software package, by utilizing PyBullet, OpenGL3, ROS/2, and Websockets."
-            Text2="Enhanced collision detection speed to 0.134 milliseconds per position for an 18-linked robotic system by applying multithreading techniques and following a microservice architecture, thereby significantly improving the system’s performance and responsiveness."
-            Text3="Developed a sophisticated volume reservation system for multi-arm coordination using the Octree data structure, optimizing information retrieval processes and ensuring real-time coordination and operation of robotic arms in complex environments."
+            Title="Artificial Intelligence Intern @ Wiki-innovation"
+            Date="Dec 2024 – Present"
+            Text1="Developing data-scraping algorithms to extract publicly available data (e.g., research papers, student proposals)."
+            Text2="Leading R&D efforts to create AI agents that translate raw data into structured 'opportunities' for innovators and entrepreneurs."
+            Text3="Overseeing web design and development to deliver data-driven insights through an interactive interface for end-users."
           />
           <ExperienceComponent
-            Title="Research Assistant @ Robotic Systems Lab"
-            Date="September 2023 – Present"
-            Text1="Enhanced guide dog robot’s 3D auditory mapping by 15.3% using isometric mic array, DOA estimation algorithm, and signal processing with pyaudio, librosa, scipy, resulting in increased planning confidence against occlusions for navigating a visually impaired user."
-            Text2="Developed a convolutional recurrent neural network for sound source distance estimation to improve obstacle avoidance, leveraging sklearn, tensorflow, and keras for automated signal processing."
-            Text3="Led audio/visual data collection and integration with a semantic-aware path planner, enhancing navigation safety by 10%."
+            Title="Artificial Intelligence Researcher @ ExamAI"
+            Date="Dec 2024 – Present"
+            Text1="Researching and developing an AI system for mass grading of handwritten papers."
+            Text2="Designing a generalizable grading system to streamline the assessment process for exam AI."
           />
           <ExperienceComponent
-            Title="Software Engineer Intern @ UMass Information Technology"
-            Date="January 2023 – Present"
-            Text1="Led the configuration and deployment of Grouper for Canvas admin management, integrating attestation features which resulted in a 20% reduction in unauthorized admin additions, utilizing Agile methodologies with Scrum and Jira to streamline the project."
-            Text2="Engineered a robust ETL process using Boomi to synchronize Active Directory group members with Canvas via RESTful APIs, achieving a 98% data synchronization accuracy rate and significantly enhancing data integrity and consistency across platforms."
-            Text3="Developed and implemented a subprocess for NetID collision resolution utilizing SSMS and PostgreSQL, which reduced manual account management efforts by 30% and improved efficiency through the application of Test Driven Development (TDD) practices."
+            Title="Research Assistant @ Center for Intelligent Information Retrieval Lab"
+            Date="Sept 2023 – Present"
+            Text1="Developed a series of web pages to be deployed on Amazon Mechanical Turk, gathering data on LLM preferences, by integrating
+ OpenAI API, Gemini, and ChatGPT-4o mini into the user interfaces."
+            Text2="Researching methods to enhance Large Language Models (LLMs) for improved personalization in user-specific question answering."
           />
           <ExperienceComponent
-            Title="Undergraduate Course Assistant @ CICS"
-            Date="January 2023 – Present"
-            Text1="Accomplished a 10% reduction in grading time for exams by coordinating with faculty to implement efficient grading workflows."
-            Text2="Enhanced student participation by leading engaging discussion sessions, as measured by a 20% increase in student performance."
-            Text3="Developed and maintained course materials, including interactive exercises, practice exams reinforcing key concepts."
+            Title="Research Assistant @ Machine Learning for Education"
+            Date="May 2023 – Present"
+            Text1="Designed a multi-tiered system of prompts for ChatGPT-4, improving grading accuracy by 20% for real student exams."
+            Text2="Leveraged Java code to batch prompt OpenAI, facilitating the collection of hundreds of data points for analysis."
+            Text3="Develop and integrate data collection and evaluation pipelines for GPT-4o in an NLP research project, including implementing
+            rubric-based prompting, chain-of-thought (CoT) generation, zero- and few-shot learning techniques, and aligning with standard data
+            splits and metrics for reproducibility."
           />
           <ExperienceComponent
-            Title="President @ CICSoft Student Organization"
-            Date="August 2022 – Present"
-            Text1="CICSoft aims to bridge the gap between school and industry by enriching the students with skills in AI/ML, DSA, Systems etc."
-            Text2="Leading a board of 6, steering 400+ members with events focused on technical/behavioural interview prep, system design."
-            Text3="Fostered a robust tech community, cultivating a platform for networking, skill development, and career advancement for members."
+            Title="Events Coordinator @ Massachusetts AI"
+            Date="February 2023 – Present"
+            Text1="Plan events for the increased involvement and knowledge of artificial intelligence @ UMass Amherst"
           />
           
         </div>

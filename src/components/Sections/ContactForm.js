@@ -33,23 +33,23 @@ const ContactForm = () => {
   }, []);
 
   const onEmailClick = useCallback(() => {
-    window.location.href = "https://zcal.co/shiven_patel/halfhour";
+    window.location.href = "https://zcal.co/adrianacaraeni";
   }, []);
 
   const onLinkedInClick = useCallback(() => {
-    window.open("https://www.linkedin.com/in/sp1105/");
+    window.open("https://www.linkedin.com/in/adriana-caraeni/");
   }, []);
 
   const onGithubClick = useCallback(() => {
-    window.open("https://github.com/Shiven110504");
+    window.open("https://github.com/AdrianaCaraeni");
   }, []);
 
   const onTwitterClick = useCallback(() => {
-    window.open("https://twitter.com/Shiven_Patel11");
+    window.open("https://twitter.com/ACaraeni70560");
   }, []);
 
   const onInstagramClick = useCallback(() => {
-    window.open("https://www.instagram.com/shiven.patel11/?hl=en");
+    window.open("https://www.instagram.com/redshirtblackskirt/?hl=en");
   }, []);
 
   return (
