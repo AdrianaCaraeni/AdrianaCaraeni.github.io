@@ -10,9 +10,9 @@ const Footer = () => {
           />
           <div className="flex flex-col items-end justify-start gap-[12px]">
             <div className="relative tracking-[-0.02em] leading-[20px] font-semibold">
-              @2024 Shiven Patel
+              All thanks to Shiven Patel
             </div>
-            <div className="relative tracking-[-0.02em] leading-[20px] font-semibold">{`Made with Love and Coffee `}</div>
+            <div className="relative tracking-[-0.02em] leading-[20px] font-semibold">{``}</div>
           </div>
         </div>
       </footer>

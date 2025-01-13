@@ -33,19 +33,19 @@ const Hero = () => {
       }, []);
 
       const onLinkedInClick = useCallback(() => {
-        window.open("https://www.linkedin.com/in/sp1105/");
+        window.open("https://www.linkedin.com/in/adriana-caraeni/");
       }, []);
     
       const onGithubClick = useCallback(() => {
-        window.open("https://github.com/Shiven110504");
+        window.open("https://github.com/AdrianaCaraeni");
       }, []);
     
       const onTwitterClick = useCallback(() => {
-        window.open("https://twitter.com/Shiven_Patel11");
+        window.open("https://twitter.com/ACaraeni70560");
       }, []);
     
       const onInstagramClick = useCallback(() => {
-        window.open("https://www.instagram.com/shiven.patel11/?hl=en");
+        window.open("https://www.instagram.com/redshirtblackskirt/?hl=en");
       }, []);
     return (
         <section className="self-stretch overflow-hidden flex flex-row items-center justify-center py-[60px] px-[69px] box-border max-w-full text-left text-29xl text-primary-black font-heading-h6-semibold mq825:py-[39px] mq825:px-[34px] mq825:box-border">
@@ -59,7 +59,7 @@ const Hero = () => {
                 >
                   <h1 className="m-0 relative text-inherit tracking-[-0.02em] leading-[56px] font-inherit mq825:text-19xl mq825:leading-[45px] mq450:text-10xl mq450:leading-[34px]">
                     <span>{`Hello I’m `}</span>
-                    <b>Shiven Patel</b>
+                    <b>Adriana Caraeni</b>
                   </h1>
                 </div>
                 <div
@@ -68,7 +68,7 @@ const Hero = () => {
                 >
                 <Typewriter
                     options={{
-                        strings: ['Software Engineer', 'Robotics Researcher', 'Entrepreneur', 'Problem Solver'],
+                        strings: ['Software Engineer', 'ML/AI Researcher', 'Entrepreneur', 'Kind Human', 'Student'],
                         autoStart: true,
                         loop: true,
                     }}
@@ -88,10 +88,11 @@ const Hero = () => {
                 className="self-stretch relative text-base tracking-[0.02em] leading-[24px] text-zinc-500 [&.animate]:animate-[1s_ease_0s_1_normal_forwards_fade-in-top] opacity-[0]"
                 data-animate-on-scroll
               >
-                <p className="m-0">{`I am a Computer Science major with a Business minor and a Commonwealth Honors College student at the University of Massachusetts Amherst. `}</p>
+                <p className="m-0">{`I am a Computer Science and Applied Mathematics Dual Degree with a Business minor and a Commonwealth Honors College student at the University of Massachusetts Amherst. `}</p>
                 <p className="m-0">
-                  I am passionate about solving problems and creating positive
-                  impact through technology and innovation.
+                  I striving to improve myself daily and make it through this wonderful life
+                  helping myself and helping other. Looking to provide value to the place I work
+                  and love to the community I am in.
                 </p>
               </div>
             </div>

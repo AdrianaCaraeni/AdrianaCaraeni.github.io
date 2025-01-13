@@ -60,7 +60,7 @@ const Navbar = () => {
   }, []);
 
   const onResumeClick = useCallback(() => {
-    window.open("https://shivenpatel.me/Shiven_Patel_Resume.pdf");
+    window.open("https://drive.google.com/file/d/1bvXoCTBE1m73sNtamPjxT9CZ-K1hFdRK/view?usp=sharing");
   }, []);
 
   return (
