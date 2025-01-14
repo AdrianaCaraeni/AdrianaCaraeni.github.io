@@ -52,45 +52,20 @@ const Projects = () => {
             </h1>
           </div>
           <ProjectComponent
-            Image="/Personal-Website.png"
+            Image="/First-Paper-Article.jpg"
             Number="01"
-            Title="Personal Website"
-            ImageLink="https://github.com/Shiven110504/Shiven110504.github.io"
-            Text1="My portfolio is a single-page application featuring a clean, modern design that highlights my experience and projects. The navigation bar allows easy access to different sections: Experience, Skills, Projects, and a Contact form. There's also a downloadable version of my resume for a more detailed look at my professional background."
-            Text2="This website was built using React.js, Tailwind CSS. It is hosted at shivenpatel.me and is fully responsive."
+            Title="Grading Handwritten Exams Paper"
+            ImageLink="https://arxiv.org/abs/2411.05231"
+            Text1="Recent advances in generative AI have enabled novel applications, including automated grading of handwritten student responses. In my project, I utilized OpenAI's API with Python to implement three levels of prompting (basic, with solutions, and with rubrics) for GPT-4o to grade probability theory exam responses. This work, published in LAK 2025, demonstrated the potential of multi-modal AI in education while highlighting the challenges of achieving high alignment with human graders."
           />
           <ProjectComponent
-            Image="/DailyDose.png"
+            Image="/DuckDefense.png"
             Number="02"
-            Title="Daily D.O.S.E"
-            ImageLink="https://github.com/Shiven110504/Daily-D.O.S.E"
-            Text1="Daily D.O.S.E understands that the journey to optimal health is about consistent, incremental steps. Tailored to your unique health profile, it suggests achievable goals, nudging you towards slightly more challenging targets as you progress."
-            Text2="Developed a user-friendly end to end application using Next.js backend framework and MongoDB database, resulting in a seamless and efficient tracking experience for users. Implemented a reinforcement learning model that analyzes user feedback to design personalized health goals, resulting in consistent progress towards optimal health for each individual user."
+            Title="UMass Tower Defense"
+            ImageLink="https://devpost.com/software/tower-defense-27kxwm"
+            Text1="Inspiration - UMass Duck Defense is a playful twist on the beloved BloonsTD game, reimagined with UMass-themed elements. Inspired by the iconic campus pond and its famous ducks, our game challenges players to defend the pond from mischievous ducks using seed-shooting towers, with custom art and UMass landmarks like the library and Sam the Minuteman, all crafted from scratch to celebrate our school spirit."
+            Text2="New Technical Knowledge - Our project was a crash course in JavaScript, HTML, CSS, and tools like Tiled and GitHub. Despite our limited web development experience, we learned through collaboration and experimentation, gaining skills in object-oriented programming, event handling, grid-based mapping, and version control, which enhanced both our technical and teamwork abilities."
           />
-          <ProjectComponent
-            Image="/HackUMass.png"
-            Number="03"
-            Title="HackUMass XI "
-            ImageLink="https://hackumass.com/"
-            Text1="Updated the frontend for HackUMass XI, to create a visually appealing and user-friendly interface. "
-            Text2="Deployed and maintaining the Docker instance of fuse-umass dashboard to smoothly intake registrations, manage emailing, increasing initial participation by around 7%."
-          />
-          <ProjectComponent
-            Image="/EClub.png"
-            Number="04"
-            Title="UMass Entrepreneurship Club"
-            ImageLink="https://github.com/UMass-Amherst-Entrepreneurship-Club/Website-2.0"
-            Text1="As the Director of Technology leading a team to build and maintain the website of Entrepreneurship Club built using React.js, Node.js, CSS, Three.js, HTML."
-            Text2=""
-          />
-          <ProjectComponent
-            Image="/FutureHacks.png"
-            Number="05"
-            Title="FutureHacks 4"
-            ImageLink="https://github.com/Shiven110504/FutureHacks-4"
-            Text1="FutureHacks Four 2022 is an annual Online Free to Attend International hackathon organized by AiGoLearning."
-            Text2="As the Director, I manage a team of 7 students, handle sponsorships, arrange workshops, preside meetings, set up deadlines, etc. As the Technical Lead, I have coded the website, supervised the designing of all social media posts, and set up the other required infrastructure for hosting an online hackathon."
-            />
         </div>
       </section>
     )};
