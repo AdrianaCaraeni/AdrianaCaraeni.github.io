@@ -12,7 +12,7 @@ const Footer = () => {
             <div className="relative tracking-[-0.02em] leading-[20px] font-semibold">
               All thanks to Shiven Patel
             </div>
-            <div className="relative tracking-[-0.02em] leading-[20px] font-semibold">{``}</div>
+            <div className="relative tracking-[-0.02em] leading-[20px] font-semibold">{`https://github.com/Shiven110504/Shiven110504.github.io`}</div>
           </div>
         </div>
       </footer>

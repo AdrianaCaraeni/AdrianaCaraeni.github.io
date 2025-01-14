@@ -74,20 +74,19 @@ const ContactForm = () => {
                 </div>
                 <Typewriter
                     options={{
-                        strings: ['Tech', 'Robotics', 'Startups'],
+                        strings: ['Technology', 'Research', 'Startups', 'Industry'],
                         autoStart: true,
                         loop: true,
                     }}
                 />
               </div>
               <div className="self-stretch relative text-base tracking-[0.02em] leading-[24px] text-zinc-500">
-                I seek to push the limits of creativity to create high-engaging,
-                user-friendly, and memorable interactive experiences.
+              I aim to create meaningful value, bring warmth and positivity to people's lives, and lead a life of purpose and fulfillment.
               </div>
             </div>
             <div className="self-stretch flex flex-col items-start justify-start gap-[16px] text-9xl">
               <div className="self-stretch relative tracking-[-0.02em] leading-[32px] font-semibold whitespace-nowrap mq450:text-3xl mq450:leading-[26px]">
-                shiven110504@gmail.com
+                acaraeni@umass.edu
               </div>
             </div>
           </div>
