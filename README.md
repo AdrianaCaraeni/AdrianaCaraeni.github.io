@@ -1,4 +1,4 @@
-## The portfolio is live and accessible at [shivenpatel.me](http://shivenpatel.me).
+## The portfolio is live and accessible at [AdrianaCaraeni.github.io](http://AdrianaCaraeni.github.io).
 
 # Personal Portfolio Website
 
