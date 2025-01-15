@@ -2,11 +2,11 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ "main" ]  # or "master" depending on your default branch
+    branches: [ "main" ]  # or master, depending on your default branch
   workflow_dispatch:
 
 permissions:
-  contents: write  # This is important! Add this permissions block
+  contents: write
 
 jobs:
   deploy:
@@ -14,14 +14,19 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       
-      # Add your build steps here if needed
-      # - name: Build
-      #   run: |
-      #     npm ci
-      #     npm run build
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'  # or your preferred version
 
+      - name: Install Dependencies
+        run: npm ci
+      
+      - name: Build
+        run: npm run build
+        
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: .  # or your build directory like ./dist
+          publish_dir: ./build  # This should point to your React build output
