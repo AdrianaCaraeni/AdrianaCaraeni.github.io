@@ -1,5 +1,5 @@
 {
-  "name": "personal_portfolio",
+  "name": "adrianacaraeni.github.io",
   "version": "0.1.0",
   "homepage": "https://AdrianaCaraeni.github.io",
   "private": true,
@@ -11,6 +11,7 @@
     "@types/node": "^16.11.14",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
+    "adrianacaraeni.github.io": "file:",
     "constants-browserify": "^1.0.0",
     "personal_portfolio": "file:",
     "react": "^18.3.1",
