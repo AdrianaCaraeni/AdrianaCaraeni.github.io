@@ -88,7 +88,7 @@ const Experience = () => {
           <ExperienceComponent
             Title="Level-Up Team @ Entrepeurship Club"
             Date="January 2024 – Present"
-            Text1="Collaborating with the Berthuime Center for Entrepeurship to host educational experiences for UMass Amherst students a minimum of month a month during the semester."
+            Text1="Collaborating with the Berthuime Center for Entrepeurship to host educational experiences for UMass Amherst students."
             Text2="Present bootcamp presentations to club members, visit startups in the area, and work with the MBA fellows."
           />
           
