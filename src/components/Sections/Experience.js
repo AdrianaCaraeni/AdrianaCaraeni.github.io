@@ -51,7 +51,7 @@ const Experience = () => {
         <div className="self-stretch overflow-hidden flex flex-col items-start justify-start py-10 px-6 box-border gap-[32px] max-w-full text-center text-5xl mq825:gap-[16px] mq825:pt-5 mq825:pb-5 mq450:pl-0 mq450:pr-0 mq825:box-border mq1425:pt-[26px] mq1425:pb-[26px] mq1425:box-border">
           
           <ExperienceComponent
-            Title="Artificial Intelligence Intern @ Wiki-innovation"
+            Title="Software Engineering Intern @ Wiki-innovation"
             Date="Dec 2024 – Present"
             Text1="Developing data-scraping algorithms to extract publicly available data (e.g., research papers, student proposals)."
             Text2="Leading R&D efforts to create AI agents that translate raw data into structured 'opportunities' for innovators and entrepreneurs."
@@ -65,14 +65,14 @@ const Experience = () => {
           />
           <ExperienceComponent
             Title="Research Assistant @ Center for Intelligent Information Retrieval Lab"
-            Date="Sept 2023 – Present"
+            Date="Sept 2024 – Present"
             Text1="Developed a series of web pages to be deployed on Amazon Mechanical Turk, gathering data on LLM preferences, by integrating
  OpenAI API, Gemini, and ChatGPT-4o mini into the user interfaces."
             Text2="Researching methods to enhance Large Language Models (LLMs) for improved personalization in user-specific question answering."
           />
           <ExperienceComponent
             Title="Research Assistant @ Machine Learning for Education"
-            Date="May 2023 – Present"
+            Date="May 2024 – Present"
             Text1="Designed a multi-tiered system of prompts for ChatGPT-4, improving grading accuracy by 20% for real student exams."
             Text2="Leveraged Java code to batch prompt OpenAI, facilitating the collection of hundreds of data points for analysis."
             Text3="Develop and integrate data collection and evaluation pipelines for GPT-4o in an NLP research project, including implementing
@@ -81,8 +81,15 @@ const Experience = () => {
           />
           <ExperienceComponent
             Title="Events Coordinator @ Massachusetts AI"
-            Date="February 2023 – Present"
-            Text1="Plan events for the increased involvement and knowledge of artificial intelligence @ UMass Amherst"
+            Date="Sep 2024 – Present"
+            Text1="Plan events for the increased involvement and knowledge of artificial intelligence @ UMass Amherst."
+            Text2="Facilitating the Spring 2025 AI/ML program organized by MassAI, including mentoring project participants and assisting with the end-of-semester poster session."
+          />
+          <ExperienceComponent
+            Title="Level-Up Team @ Entrepeurship Club"
+            Date="January 2024 – Present"
+            Text1="Collaborating with the Berthuime Center for Entrepeurship to host educational experiences for UMass Amherst students a minimum of month a month during the semester."
+            Text2="Present bootcamp presentations to club members, visit startups in the area, and work with the MBA fellows."
           />
           
         </div>
