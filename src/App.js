@@ -6,6 +6,10 @@ import {
   useLocation,
 } from "react-router-dom";
 import Main from "./pages/Main";
+import Industry from "./pages/Industry";
+import Research from "./pages/Research";
+import Academics from "./pages/Academics";
+import ProjectsPage from "./pages/ProjectsPage";
 
 function App() {
   const action = useNavigationType();
@@ -27,6 +31,22 @@ function App() {
         title = "";
         metaDescription = "";
         break;
+      case "/industry":
+        title = "Industry";
+        metaDescription = "";
+        break;
+      case "/research":
+        title = "Research";
+        metaDescription = "";
+        break;
+      case "/academics":
+        title = "Academics";
+        metaDescription = "";
+        break;
+      case "/projects":
+        title = "Projects";
+        metaDescription = "";
+        break;
     }
 
     if (title) {
@@ -46,6 +66,10 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Main />} />
+      <Route path="/industry" element={<Industry />} />
+      <Route path="/research" element={<Research />} />
+      <Route path="/academics" element={<Academics />} />
+      <Route path="/projects" element={<ProjectsPage />} />
     </Routes>
   );
 }

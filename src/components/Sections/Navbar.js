@@ -1,4 +1,5 @@
 import { useCallback, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   useEffect(() => {
@@ -31,34 +32,6 @@ const Navbar = () => {
     };
   }, []);
 
-  const onAboutMeClick = useCallback(() => {
-    const anchor = document.querySelector("[data-scroll-to='experience']");
-    if (anchor) {
-      anchor.scrollIntoView({ block: "start", behavior: "smooth" });
-    }
-  }, []);
-
-  const onSkillsClick = useCallback(() => {
-    const anchor = document.querySelector("[data-scroll-to='skills']");
-    if (anchor) {
-      anchor.scrollIntoView({ block: "start", behavior: "smooth" });
-    }
-  }, []);
-
-  const onProjectsClick = useCallback(() => {
-    const anchor = document.querySelector("[data-scroll-to='project']");
-    if (anchor) {
-      anchor.scrollIntoView({ block: "start", behavior: "smooth" });
-    }
-  }, []);
-
-  const onContactClick = useCallback(() => {
-    const anchor = document.querySelector("[data-scroll-to='contactForm']");
-    if (anchor) {
-      anchor.scrollIntoView({ block: "start", behavior: "smooth" });
-    }
-  }, []);
-
   const onResumeClick = useCallback(() => {
     window.open("https://drive.google.com/file/d/1bvXoCTBE1m73sNtamPjxT9CZ-K1hFdRK/view?usp=sharing");
   }, []);
@@ -69,7 +42,7 @@ const Navbar = () => {
         className="flex-1 overflow-hidden flex flex-row items-center justify-between py-0 px-8 box-border [&.animate]:animate-[1s_ease_0s_1_normal_forwards_fade-in] opacity-[0] gap-[20px] max-w-full mq825:hidden"
         data-animate-on-scroll
       >
-        <button className="cursor-pointer [border:none] py-0 pr-[17px] pl-0 bg-[transparent] flex flex-row items-center justify-start gap-[11px]">
+        <Link to="/" className="cursor-pointer [border:none] py-0 pr-[17px] pl-0 bg-[transparent] flex flex-row items-center justify-start gap-[11px] no-underline">
           <img
             className="relative w-[22px] h-[22px]"
             loading="eager"
@@ -77,40 +50,40 @@ const Navbar = () => {
             src="/icon.svg"
           />
           <b className="relative text-xl tracking-[-0.02em] leading-[24px] capitalize font-heading-h6-semibold text-primary-black text-left whitespace-nowrap">{`Adriana`}</b>
-        </button>
+        </Link>
         <div className="w-[466px] flex flex-row items-center justify-center gap-[32px] max-w-full mq825:gap-[16px]">
-          <button
-            className="cursor-pointer [border:none] p-0 bg-[transparent] flex-1 flex flex-row items-center justify-center"
-            onClick={onAboutMeClick}
+          <Link
+            to="/industry"
+            className="cursor-pointer [border:none] p-0 bg-[transparent] flex-1 flex flex-row items-center justify-center no-underline"
           >
             <div className="relative text-xl tracking-[-0.02em] leading-[24px] capitalize font-semibold font-heading-h6-semibold text-primary-black text-left">
-              Experience
+              Industry
             </div>
-          </button>
-          <button
-            className="cursor-pointer [border:none] p-0 bg-[transparent] flex flex-row items-center justify-center"
-            onClick={onSkillsClick}
+          </Link>
+          <Link
+            to="/research"
+            className="cursor-pointer [border:none] p-0 bg-[transparent] flex flex-row items-center justify-center no-underline"
           >
             <div className="relative text-xl tracking-[-0.02em] leading-[24px] capitalize font-semibold font-heading-h6-semibold text-primary-black text-left">
-              Skills
+              Research
             </div>
-          </button>
-          <button
-            className="cursor-pointer [border:none] p-0 bg-[transparent] flex flex-row items-center justify-center"
-            onClick={onProjectsClick}
+          </Link>
+          <Link
+            to="/academics"
+            className="cursor-pointer [border:none] p-0 bg-[transparent] flex flex-row items-center justify-center no-underline"
           >
             <div className="relative text-xl tracking-[-0.02em] leading-[24px] capitalize font-semibold font-heading-h6-semibold text-primary-black text-left">
-              Projects
+              Academics
             </div>
-          </button>
-          <button
-            className="cursor-pointer [border:none] p-0 bg-[transparent] flex-1 flex flex-row items-center justify-center"
-            onClick={onContactClick}
+          </Link>
+          <Link
+            to="/projects"
+            className="cursor-pointer [border:none] p-0 bg-[transparent] flex-1 flex flex-row items-center justify-center no-underline"
           >
             <div className="relative text-xl tracking-[-0.02em] leading-[24px] capitalize font-semibold font-heading-h6-semibold text-primary-black text-left whitespace-nowrap">
-              Contact me
+              Projects
             </div>
-          </button>
+          </Link>
         </div>
         <button
           className="cursor-pointer [border:none] py-4 px-5 bg-primary-black rounded flex flex-row items-center justify-center gap-[8px] hover:bg-darkslategray"

@@ -9,6 +9,9 @@ module.exports = {
         darkslategray: "#333",
         "zinc-500": "#71717a",
         "zinc-300": "#d4d4d8",
+        "light-pink": "#ffd6e8",
+        "light-yellow": "#fff9c4",
+        "light-purple": "#e1bee7",
       },
       spacing: {},
       fontFamily: {
