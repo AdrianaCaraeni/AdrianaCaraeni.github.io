@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-const TimelineItem = ({ logo, title, date, description, index }) => {
+const TimelineItem = ({ logo, title, company, date, description, index }) => {
   useEffect(() => {
     const scrollAnimElements = document.querySelectorAll(
       "[data-animate-on-scroll]"
@@ -53,10 +53,21 @@ const TimelineItem = ({ logo, title, date, description, index }) => {
           <h3 className="m-0 text-xl font-bold text-primary-black mq825:text-lg">
             {title}
           </h3>
+          {company && (
+            <>
+              <span className="text-sm text-zinc-500">|</span>
+              <span className="text-sm text-zinc-500 font-normal">
+                {company}
+              </span>
+            </>
+          )}
           {date && (
-            <span className="text-sm text-zinc-500 italic font-normal">
-              {date}
-            </span>
+            <>
+              <span className="text-sm text-zinc-500">|</span>
+              <span className="text-sm text-zinc-500 italic font-normal">
+                {date}
+              </span>
+            </>
           )}
         </div>
         {description && (

@@ -33,7 +33,13 @@ const Navbar = () => {
   }, []);
 
   const onResumeClick = useCallback(() => {
-    window.open("https://drive.google.com/file/d/1bvXoCTBE1m73sNtamPjxT9CZ-K1hFdRK/view?usp=sharing");
+    // Create a temporary anchor element to trigger download
+    const link = document.createElement('a');
+    link.href = '/resume.pdf';
+    link.download = 'Adriana_Caraeni_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   }, []);
 
   return (

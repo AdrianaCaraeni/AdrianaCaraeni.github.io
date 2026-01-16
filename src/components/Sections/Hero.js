@@ -53,18 +53,28 @@ const Hero = () => {
       {
         logo: "/fidelity_investments_logo.jpg",
         title: "Incoming Fidelity Full Stack Engineer",
+        company: "Fidelity",
         date: "May 2026 - August 2026",
         description: "Working on AWS cloud solutions and full-stack software development."
       },
       {
         logo: "/commonwealth_logo.jpg",
-        title: "Artificial Intelligence Tool Developer",
+        title: "Artificial Intelligence Developer",
+        company: "Commonwealth of Massachusetts",
         date: "Oct 2025 - Dec 2025",
         description: "Resolved 10+ critical bugs across the Government's Legal Office AI Tool and the Genie (General LLM Learning) AI Tool working with Agile development."
       },
       {
+        logo: "/teamup_logo.jpg",
+        title: "Team Lead & Full Stack Developer",
+        company: "TeamUp",
+        date: "Jun - Aug 2025",
+        description: "Lead a team of eight software developers to create CapMetro, a real time bus transit application Austin, Texas. Designed the system architecture and was led on deployment using Digital Ocean."
+      },
+      {
         logo: "/commonwealth_logo.jpg",
-        title: "Artificial Intelligence for the Commonwealth Intern",
+        title: "Artificial Intelligence Intern",
+        company: "Commonwealth of Massachusetts",
         date: "April 2025 - August 2025",
         description: "Built an automated video translation web application serving 1,200+ students, reducing operational costs by 95% through intelligent caching and parallel API processing."
       },
@@ -85,6 +95,7 @@ const Hero = () => {
                   key={index}
                   logo={item.logo}
                   title={item.title}
+                  company={item.company}
                   date={item.date}
                   description={item.description}
                   index={index}
