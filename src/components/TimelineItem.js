@@ -37,7 +37,7 @@ const TimelineItem = ({ logo, title, company, date, description, index }) => {
       data-animate-on-scroll
     >
       {/* Circular Logo on the timeline line */}
-      <div className="absolute left-6 w-12 h-12 rounded-full bg-primary-white border border-solid border-primary-black flex items-center justify-center shrink-0 overflow-hidden z-20 mq825:w-10 mq825:h-10 mq825:left-5" style={{ transform: 'translateX(-50%)' }}>
+      <div className="absolute left-6 w-12 h-12 rounded-full bg-primary-white border-2 border-solid border-zinc-500 flex items-center justify-center shrink-0 overflow-hidden z-20 mq825:w-10 mq825:h-10 mq825:left-5 transition-all duration-300 hover:border-transparent hover:bg-gradient-to-br hover:from-gray-300 hover:via-gray-400 hover:to-gray-500 hover:shadow-lg" style={{ transform: 'translateX(-50%)' }}>
         <div className="w-full h-full rounded-full bg-primary-white flex items-center justify-center overflow-hidden">
           <img
             src={logo}
