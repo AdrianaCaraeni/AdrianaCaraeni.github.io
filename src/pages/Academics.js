@@ -97,41 +97,55 @@ const Academics = () => {
     <div className="relative bg-primary-white w-full overflow-hidden flex flex-col items-center justify-start tracking-[normal]">
       <Navbar />
       <section
-        className="self-stretch overflow-hidden flex flex-col items-center justify-center py-[60px] px-20 text-left text-29xl text-primary-black font-heading-h6-semibold mq825:py-[39px] mq825:px-10 mq825:box-border"
+        className="self-stretch overflow-hidden flex flex-col items-center justify-center pt-[30px] pb-[60px] px-20 text-left text-29xl text-primary-black font-heading-h6-semibold mq825:pt-[20px] mq825:pb-[39px] mq825:px-10 mq825:box-border"
       >
         <div className="self-stretch overflow-hidden flex flex-col items-start justify-start py-0 pr-[41px] pl-10 gap-[40px]">
           {/* Academic Categories */}
           <div className="self-stretch flex flex-col gap-[24px]">
-            {academicCategories.map((category, categoryIndex) => (
-              <div key={categoryIndex} className="flex flex-col gap-3">
-                <h2 className="text-base font-bold text-primary-black mq825:text-sm">
-                  {category.name}
-                </h2>
-                <div className="flex flex-row flex-wrap items-start gap-2 mq825:gap-1.5 -ml-0.5">
-                  {category.classes.map((classItem, classIndex) => (
-                    <ClassTile
-                      key={classIndex}
-                      className={classItem.name}
-                      status={classItem.status}
-                    />
-                  ))}
+            {academicCategories.map((category, categoryIndex) => {
+              const categoryDelay = categoryIndex * 0.5; // Categories animate top to bottom
+              return (
+                <div 
+                  key={categoryIndex} 
+                  className="flex flex-col gap-3 opacity-0"
+                  style={{
+                    animation: `fade-in-top 0.8s ease-out ${categoryDelay}s forwards`
+                  }}
+                >
+                  <h2 className="text-base font-bold text-primary-black mq825:text-sm">
+                    {category.name}
+                  </h2>
+                  <div className="flex flex-row flex-wrap items-start gap-2 mq825:gap-1.5 -ml-0.5">
+                    {category.classes.map((classItem, classIndex) => {
+                      // Tiles animate left to right within each category
+                      const tileDelay = categoryDelay + 0.3 + (classIndex * 0.08);
+                      return (
+                        <ClassTile
+                          key={classIndex}
+                          className={classItem.name}
+                          status={classItem.status}
+                          animationDelay={tileDelay}
+                        />
+                      );
+                    })}
+                  </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
 
           {/* Legend */}
           <div className="self-stretch flex flex-row items-center justify-start gap-6 mt-8 pt-8 border-t border-solid border-primary-black mq825:gap-4 mq825:flex-wrap">
             <div className="flex flex-row items-center gap-2">
-              <div className="w-10 h-10 rounded bg-green-500 border border-solid border-primary-black"></div>
+              <div className="w-10 h-10 rounded bg-pastel-green border border-solid border-primary-black"></div>
               <span className="text-base text-primary-black mq825:text-sm">Completed</span>
             </div>
             <div className="flex flex-row items-center gap-2">
-              <div className="w-10 h-10 rounded bg-yellow-500 border border-solid border-primary-black"></div>
+              <div className="w-10 h-10 rounded bg-pastel-yellow border border-solid border-primary-black"></div>
               <span className="text-base text-primary-black mq825:text-sm">In Progress</span>
             </div>
             <div className="flex flex-row items-center gap-2">
-              <div className="w-10 h-10 rounded bg-red-500 border border-solid border-primary-black"></div>
+              <div className="w-10 h-10 rounded bg-pastel-red border border-solid border-primary-black"></div>
               <span className="text-base text-primary-black mq825:text-sm">Yet to Come</span>
             </div>
           </div>

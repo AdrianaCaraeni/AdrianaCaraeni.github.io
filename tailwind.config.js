@@ -12,6 +12,9 @@ module.exports = {
         "light-pink": "#ffd6e8",
         "light-yellow": "#fff9c4",
         "light-purple": "#e1bee7",
+        "pastel-green": "#a7f3d0",
+        "pastel-yellow": "#fef3c7",
+        "pastel-red": "#fecaca",
       },
       spacing: {},
       fontFamily: {

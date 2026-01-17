@@ -1,14 +1,14 @@
 import React from 'react';
 
-const ClassTile = ({ className, status }) => {
+const ClassTile = ({ className, status, animationDelay = 0 }) => {
   const getStatusColor = (status) => {
     switch(status) {
       case 'completed':
-        return 'bg-green-500';
+        return 'bg-pastel-green';
       case 'in-progress':
-        return 'bg-yellow-500';
+        return 'bg-pastel-yellow';
       case 'incomplete':
-        return 'bg-red-500';
+        return 'bg-pastel-red';
       default:
         return 'bg-gray-300';
     }
@@ -37,7 +37,12 @@ const ClassTile = ({ className, status }) => {
   const { name: classNameName, number: classNumber } = parseClassName(className);
 
   return (
-    <div className="flex flex-col items-center w-[70px]">
+    <div 
+      className="flex flex-col items-center w-[70px] opacity-0"
+      style={{
+        animation: `slide-in-left 0.7s ease-out ${animationDelay}s forwards`
+      }}
+    >
       <div className={`w-14 h-14 rounded border border-solid border-primary-black flex flex-col items-center justify-center ${getStatusColor(status)} shrink-0 p-1`}>
         {classNumber && (
           <span className="text-[9px] text-zinc-500 leading-tight">
