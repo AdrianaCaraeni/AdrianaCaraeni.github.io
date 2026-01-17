@@ -78,6 +78,27 @@ const Hero = () => {
         date: "April 2025 - August 2025",
         description: "Built an automated video translation web application serving 1,200+ students, reducing operational costs by 95% through intelligent caching and parallel API processing."
       },
+      {
+        logo: "/ersp_logo.png",
+        title: "Research Fellow",
+        company: "Early Research Scholars Program",
+        date: "Sept 2024 - May 2025",
+        description: "Worked with the Center for Intelligent Information Retrieval lab on a project to gather data using Amazon Mechanical Turk for personalizing Large Language Models in order to have high quality data for Direct Preference Optimization fine-tuning."
+      },
+      {
+        logo: "/ml4ed_logo.png",
+        title: "Research Assistant",
+        company: "Machine Learning for Education Lab",
+        date: "May 2024 - April 2025",
+        description: "Investigated how to best grade handwritten math exams using multimodal LLM capabilities (summer 2024). Investigated how to best grade essays using LLMs (spring 2025)."
+      },
+      {
+        logo: "/iCons_logo.jpg",
+        title: "Researcher and Student Leader",
+        company: "iCons",
+        date: "Feb 2024 - Present",
+        description: "Investigated the possibility of using Quantum Computing for route optimization. Selected by peers to be student leader for Cohort of 60+ students to increase community and help organize events."
+      },
       // Add more timeline items here as needed
     ];
 
