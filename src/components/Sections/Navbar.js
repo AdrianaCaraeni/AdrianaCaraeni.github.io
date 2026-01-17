@@ -57,10 +57,10 @@ const Navbar = () => {
           />
           <b className="relative text-xl tracking-[-0.02em] leading-[24px] capitalize font-heading-h6-semibold text-primary-black text-left whitespace-nowrap">{`Adriana`}</b>
         </Link>
-        <div className="w-[466px] flex flex-row items-center justify-center gap-[32px] max-w-full mq825:gap-[16px]">
+        <div className="flex flex-row items-center justify-start gap-[32px] ml-8 mq825:gap-[16px]">
           <Link
             to="/industry"
-            className="cursor-pointer [border:none] p-0 bg-[transparent] flex-1 flex flex-row items-center justify-center no-underline"
+            className="cursor-pointer [border:none] p-0 bg-[transparent] flex flex-row items-center justify-start no-underline"
           >
             <div className="relative text-xl tracking-[-0.02em] leading-[24px] capitalize font-semibold font-heading-h6-semibold text-primary-black text-left">
               Industry
@@ -68,7 +68,7 @@ const Navbar = () => {
           </Link>
           <Link
             to="/research"
-            className="cursor-pointer [border:none] p-0 bg-[transparent] flex flex-row items-center justify-center no-underline"
+            className="cursor-pointer [border:none] p-0 bg-[transparent] flex flex-row items-center justify-start no-underline"
           >
             <div className="relative text-xl tracking-[-0.02em] leading-[24px] capitalize font-semibold font-heading-h6-semibold text-primary-black text-left">
               Research
@@ -76,18 +76,10 @@ const Navbar = () => {
           </Link>
           <Link
             to="/academics"
-            className="cursor-pointer [border:none] p-0 bg-[transparent] flex flex-row items-center justify-center no-underline"
+            className="cursor-pointer [border:none] p-0 bg-[transparent] flex flex-row items-center justify-start no-underline"
           >
             <div className="relative text-xl tracking-[-0.02em] leading-[24px] capitalize font-semibold font-heading-h6-semibold text-primary-black text-left">
               Academics
-            </div>
-          </Link>
-          <Link
-            to="/projects"
-            className="cursor-pointer [border:none] p-0 bg-[transparent] flex-1 flex flex-row items-center justify-center no-underline"
-          >
-            <div className="relative text-xl tracking-[-0.02em] leading-[24px] capitalize font-semibold font-heading-h6-semibold text-primary-black text-left whitespace-nowrap">
-              Projects
             </div>
           </Link>
         </div>

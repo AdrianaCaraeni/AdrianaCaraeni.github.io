@@ -16,6 +16,7 @@ module.exports = {
       spacing: {},
       fontFamily: {
         "heading-h6-semibold": "Sora",
+        "cormorant-garamond": "Cormorant Garamond",
       },
       borderRadius: {
         "lg-8": "18.8px",

@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import Navbar from "../components/Sections/Navbar";
 import Footer from "../components/Sections/Footer";
-import Skill from "../components/SkillComponent";
+import ClassTile from "../components/ClassTile";
 
 const Academics = () => {
   useEffect(() => {
@@ -34,17 +34,63 @@ const Academics = () => {
     };
   }, []);
 
-  const skills = [
-    { src: "/python.svg", label: "Python" },
-    { src: "/iconjavscript.svg", label: "JavaScript" },
-    { src: "/html5.svg", label: "HTML" },
-    { src: "/css3.svg", label: "CSS" },
-    { src: "/react.svg", label: "React.js" },
-    { src: "/tailwindcss.svg", label: "Tailwind" },
-    { src: "/nodejs.svg", label: "Node.js" },
-    { src: "/nextjs.svg", label: "Next.js" },
-    { src: "/java.svg", label: "Java" },
-    { src: "/icongit.svg", label: "Git/Github" }
+  const academicCategories = [
+    {
+      name: "Computer Science",
+      classes: [
+        { name: "Algorithms 311", status: "completed" },
+        { name: "Foundations of Programming 110", status: "completed" },
+        { name: "Object Oriented Programming 160", status: "completed" },
+        { name: "Data Structures 210", status: "completed" },
+        { name: "Intro to C Programming 198C", status: "completed" },
+        { name: "Computer Systems Principles 230", status: "completed" },
+        { name: "Statistics for Computer Science 240", status: "completed" },
+        { name: "Discrete Mathematics 250", status: "completed" },
+        { name: "Programming Methodology 220", status: "completed" },
+        { name: "Software Engineering 320", status: "completed" },
+        { name: "Artificial Intelligence 383", status: "completed" },
+        { name: "Search Engines 446", status: "completed" },
+        { name: "Chem 111", status: "completed" },
+        { name: "Physics 151", status: "completed" },
+        { name: "Machine Learning 589", status: "in-progress" },
+        { name: "Applications of NLP 485", status: "in-progress" },
+        { name: "Formal Language Theory 501", status: "in-progress" },
+        { name: "Honors Thesis", status: "incomplete" }
+      ]
+    },
+    {
+      name: "Mathematics",
+      classes: [
+        { name: "Calculus 1", status: "completed" },
+        { name: "Calculus 2", status: "completed" },
+        { name: "Calculus 3", status: "completed" },
+        { name: "Differential Equations", status: "completed" },
+        { name: "Linear Algebra", status: "completed" },
+        { name: "Statistics 315", status: "completed" },
+        { name: "Advanced Linear Algebra 545", status: "completed" },
+        { name: "Abstract Algebra 411", status: "incomplete" },
+        { name: "Scientific Computing 551", status: "incomplete" }
+      ]
+    },
+    {
+      name: "Business",
+      classes: [
+        { name: "Accounting 301", status: "completed" },
+        { name: "Marketing 301", status: "completed" },
+        { name: "Finance 301", status: "in-progress" },
+        { name: "OIM 301", status: "incomplete" },
+        { name: "Management 301", status: "incomplete" }
+      ]
+    },
+    {
+      name: "iCons",
+      classes: [
+        { name: "189H", status: "completed" },
+        { name: "289H", status: "completed" },
+        { name: "389H", status: "in-progress" },
+        { name: "Honors Thesis", status: "incomplete" }
+      ]
+    }
   ];
 
   return (
@@ -53,19 +99,41 @@ const Academics = () => {
       <section
         className="self-stretch overflow-hidden flex flex-col items-center justify-center py-[60px] px-20 text-left text-29xl text-primary-black font-heading-h6-semibold mq825:py-[39px] mq825:px-10 mq825:box-border"
       >
-        <div className="self-stretch overflow-hidden flex flex-col items-start justify-start py-0 pr-[41px] pl-10 gap-[20px]">
-          <div
-            className="self-stretch overflow-hidden flex flex-row items-center justify-center py-5 px-0 gap-[16px] [&.animate]:animate-[1s_ease_0s_1_normal_forwards_fade-in-top] opacity-[0] mq450:flex-wrap"
-            data-animate-on-scroll
-          >
-            <h1 className="m-0 relative text-inherit tracking-[-0.02em] leading-[56px] font-normal font-inherit mq825:text-19xl mq825:leading-[45px] mq450:text-10xl mq450:leading-[34px]">
-              Academics
-            </h1>
-          </div>
-          <div className="self-stretch flex flex-row flex-wrap items-center justify-center py-5 px-0 box-border gap-[71px] min-h-[492px] text-center text-xl mq825:gap-[35px] mq450:gap-[18px]">
-            {skills.map(skill => (
-              <Skill key={skill.label} src={skill.src} label={skill.label} animateOnScroll={true} />
+        <div className="self-stretch overflow-hidden flex flex-col items-start justify-start py-0 pr-[41px] pl-10 gap-[40px]">
+          {/* Academic Categories */}
+          <div className="self-stretch flex flex-col gap-[24px]">
+            {academicCategories.map((category, categoryIndex) => (
+              <div key={categoryIndex} className="flex flex-col gap-3">
+                <h2 className="text-base font-bold text-primary-black mq825:text-sm">
+                  {category.name}
+                </h2>
+                <div className="flex flex-row flex-wrap items-start gap-2 mq825:gap-1.5 -ml-0.5">
+                  {category.classes.map((classItem, classIndex) => (
+                    <ClassTile
+                      key={classIndex}
+                      className={classItem.name}
+                      status={classItem.status}
+                    />
+                  ))}
+                </div>
+              </div>
             ))}
+          </div>
+
+          {/* Legend */}
+          <div className="self-stretch flex flex-row items-center justify-start gap-6 mt-8 pt-8 border-t border-solid border-primary-black mq825:gap-4 mq825:flex-wrap">
+            <div className="flex flex-row items-center gap-2">
+              <div className="w-10 h-10 rounded bg-green-500 border border-solid border-primary-black"></div>
+              <span className="text-base text-primary-black mq825:text-sm">Completed</span>
+            </div>
+            <div className="flex flex-row items-center gap-2">
+              <div className="w-10 h-10 rounded bg-yellow-500 border border-solid border-primary-black"></div>
+              <span className="text-base text-primary-black mq825:text-sm">In Progress</span>
+            </div>
+            <div className="flex flex-row items-center gap-2">
+              <div className="w-10 h-10 rounded bg-red-500 border border-solid border-primary-black"></div>
+              <span className="text-base text-primary-black mq825:text-sm">Yet to Come</span>
+            </div>
           </div>
         </div>
       </section>
