@@ -48,7 +48,7 @@ const TimelineItem = ({ logo, title, company, date, description, index }) => {
       </div>
       
       {/* Rounded Rectangular Box */}
-      <div className="bg-primary-white rounded-lg border border-solid border-primary-black p-5 shadow-sm flex-1 min-w-[200px]">
+      <div className="bg-primary-white rounded-lg border-[1.5px] border-solid border-primary-black p-5 shadow-sm flex-1 min-w-[200px]">
         <div className="flex flex-row items-baseline gap-3 mb-2 flex-wrap">
           <h3 className="m-0 text-xl font-bold text-primary-black mq825:text-lg">
             {title}

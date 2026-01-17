@@ -55,7 +55,7 @@ const Navbar = () => {
             alt=""
             src="/icon.svg"
           />
-          <b className="relative text-xl tracking-[-0.02em] leading-[24px] capitalize font-heading-h6-semibold text-primary-black text-left whitespace-nowrap">{`Adriana`}</b>
+          <b className="relative text-xl tracking-[-0.02em] leading-[24px] capitalize font-heading-h6-semibold text-primary-black text-left whitespace-nowrap">{`Adriana Caraeni`}</b>
         </Link>
         <div className="flex flex-row items-center justify-start gap-[32px] ml-8 mq825:gap-[16px]">
           <Link

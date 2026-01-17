@@ -107,7 +107,7 @@ const Hero = () => {
           {/* Timeline Container */}
           <div className="w-full max-w-4xl relative py-8">
             {/* Vertical Timeline Line */}
-            <div className="absolute left-6 w-0.5 h-full bg-zinc-500 top-0 mq825:left-5 z-0"></div>
+            <div className="absolute left-6 w-[1.5px] h-full bg-primary-black top-0 mq825:left-5 z-0"></div>
             
             {/* Timeline Items */}
             <div className="relative w-full">

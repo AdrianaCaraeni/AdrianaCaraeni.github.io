@@ -61,11 +61,11 @@ const Academics = () => {
     {
       name: "Mathematics",
       classes: [
-        { name: "Calculus 1", status: "completed" },
-        { name: "Calculus 2", status: "completed" },
-        { name: "Calculus 3", status: "completed" },
-        { name: "Differential Equations", status: "completed" },
-        { name: "Linear Algebra", status: "completed" },
+        { name: "Calculus 1 131", status: "completed" },
+        { name: "Calculus 2 132", status: "completed" },
+        { name: "Calculus 3 233", status: "completed" },
+        { name: "Differential Equations 331", status: "completed" },
+        { name: "Linear Algebra 235", status: "completed" },
         { name: "Statistics 315", status: "completed" },
         { name: "Advanced Linear Algebra 545", status: "completed" },
         { name: "Abstract Algebra 411", status: "incomplete" },
