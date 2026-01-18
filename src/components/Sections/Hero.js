@@ -79,6 +79,13 @@ const Hero = () => {
         description: "Built an automated video translation web application serving 1,200+ students, reducing operational costs by 95% through intelligent caching and parallel API processing."
       },
       {
+        logo: "/algoverse_logo.jpg",
+        title: "Research Fellow",
+        company: "Algoverse",
+        date: "Jun 2025 - Present",
+        description: "Introduced a novel framework for running Direct Preference Optimization - HiPO (Hierarchical Preference Optimization) - which improves large language model reasoning by breaking responses into three segments and optimizing them as separate units."
+      },
+      {
         logo: "/ersp_logo.png",
         title: "Research Fellow",
         company: "Early Research Scholars Program",
