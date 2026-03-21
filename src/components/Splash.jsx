@@ -1,10 +1,19 @@
 import { useEffect, useRef, useState } from 'react'
 
-const DURATION_MS = 1800
+const DURATION_MS = 5400
+const ROTATE_MS = 1260
+
+const ROTATING_LINES = [
+  'I grow businesses.',
+  'Entrepreneur · Sales · AI/ML · SWE',
+  'Scaling ideas into reality.',
+  'Bold, modern, technical — human.',
+]
 
 export default function Splash() {
   const [progress, setProgress] = useState(0)
   const [done, setDone] = useState(false)
+  const [lineIndex, setLineIndex] = useState(0)
   const rafRef = useRef(null)
   const startRef = useRef(null)
 
@@ -29,6 +38,14 @@ export default function Splash() {
     }
   }, [])
 
+  useEffect(() => {
+    if (done) return
+    const id = setInterval(() => {
+      setLineIndex((i) => (i + 1) % ROTATING_LINES.length)
+    }, ROTATE_MS)
+    return () => clearInterval(id)
+  }, [done])
+
   return (
     <div
       id="splash-screen"
@@ -38,11 +55,12 @@ export default function Splash() {
       role="status"
     >
       <div className="splash-inner">
-        <div className="splash-logo" aria-hidden="true">
-          AC
-        </div>
         <h1 className="splash-name">Adriana Caraeni</h1>
-        <p className="splash-tagline">I grow businesses.</p>
+        <div className="splash-rotator" aria-live="polite">
+          <p key={lineIndex} className="splash-rotator-line">
+            {ROTATING_LINES[lineIndex]}
+          </p>
+        </div>
         <div className="splash-bar-wrap">
           <div className="splash-bar-track">
             <div className="splash-bar-fill" style={{ width: `${progress}%` }} />

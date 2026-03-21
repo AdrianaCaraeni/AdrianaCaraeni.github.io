@@ -15,7 +15,7 @@ function getActiveId() {
   return active
 }
 
-export default function Navbar() {
+export default function Navbar({ onNameClick }) {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
   const [active, setActive] = useState('hero')
@@ -45,7 +45,7 @@ export default function Navbar() {
       <nav className="container-page" aria-label="Primary">
         <a href="#hero" className="nav-logo" onClick={closeMenu}>
           <span className="nav-logo-mark" aria-hidden="true">
-            AC
+            <span className="nav-logo-mark-letter">A</span>
           </span>
           <span className="nav-logo-text">Adriana Caraeni</span>
         </a>
@@ -53,7 +53,15 @@ export default function Navbar() {
         <div className={`nav-links-wrap ${menuOpen ? 'is-open' : ''}`}>
           <ul className="nav-links">
             <li>
-              <a href="#hero" className={linkClass('hero')} onClick={closeMenu}>
+              <a
+                href="#hero"
+                className={linkClass('hero')}
+                onClick={(e) => {
+                  e.preventDefault()
+                  onNameClick?.()
+                  closeMenu()
+                }}
+              >
                 Adriana Caraeni
               </a>
             </li>
