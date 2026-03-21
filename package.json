@@ -1,56 +1,27 @@
 {
-  "name": "AdrianaCaraeni.github.io",
-  "version": "0.1.0",
-  "homepage": "https://AdrianaCaraeni.github.io",
+  "name": "-vite-new",
   "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "@types/jest": "^29.5.0",
-    "@types/node": "^16.11.14",
-    "@types/react": "^18.0.28",
-    "@types/react-dom": "^18.0.11",
-    "adrianacaraeni.github.io": "file:",
-    "AdrianaCaraeni.github.io": "file:",
-    "constants-browserify": "^1.0.0",
-    "personal_portfolio": "file:",
-    "react": "^18.3.1",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.2.1",
-    "react-scripts": "^5.0.1",
-    "typewriter-effect": "^2.21.0",
-    "web-vitals": "^2.1.4"
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "autoprefixer": "^10.4.8",
-    "gh-pages": "^6.3.0",
-    "postcss": "^8.4.16",
-    "tailwindcss": "^3.1.8"
-  },
-  "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
-    "dev": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "root": true
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "@eslint/js": "^9.39.4",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "eslint": "^9.39.4",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.5.2",
+    "globals": "^17.4.0",
+    "vite": "^8.0.1"
   }
 }
