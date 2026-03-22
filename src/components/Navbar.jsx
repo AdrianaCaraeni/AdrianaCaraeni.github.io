@@ -43,7 +43,15 @@ export default function Navbar({ onNameClick }) {
   return (
     <header className={`site-nav ${scrolled ? 'is-scrolled' : ''}`}>
       <nav className="container-page" aria-label="Primary">
-        <a href="#hero" className="nav-logo" onClick={closeMenu}>
+        <a
+          href="#hero"
+          className="nav-logo"
+          onClick={(e) => {
+            e.preventDefault()
+            onNameClick?.()
+            closeMenu()
+          }}
+        >
           <span className="nav-logo-mark" aria-hidden="true">
             <span className="nav-logo-mark-letter">A</span>
           </span>
@@ -52,19 +60,6 @@ export default function Navbar({ onNameClick }) {
 
         <div className={`nav-links-wrap ${menuOpen ? 'is-open' : ''}`}>
           <ul className="nav-links">
-            <li>
-              <a
-                href="#hero"
-                className={linkClass('hero')}
-                onClick={(e) => {
-                  e.preventDefault()
-                  onNameClick?.()
-                  closeMenu()
-                }}
-              >
-                Adriana Caraeni
-              </a>
-            </li>
             <li>
               <a href="#experience" className={linkClass('experience')} onClick={closeMenu}>
                 Experience

@@ -24,20 +24,6 @@ export default function Hero({ onNameClick }) {
         <p className="hero-body">
           Founder, operator, and engineer obsessed with scaling ideas into reality.
         </p>
-
-        <div className="hero-actions">
-          <a href="#experience" className="hero-btn-primary">
-            View My Work →
-          </a>
-          <a href="#about" className="hero-btn-ghost">
-            About Me
-          </a>
-        </div>
-      </div>
-
-      <div className="hero-scroll" aria-hidden="true">
-        <span className="hero-scroll-label">Scroll</span>
-        <span className="hero-scroll-line" />
       </div>
     </section>
   )
