@@ -5,9 +5,18 @@ export default function Hero({ onNameClick }) {
       <div className="hero-orb hero-orb--2" aria-hidden="true" />
 
       <div className="hero-inner">
-        <div className="hero-badge">
-          <span className="hero-badge-dot" />
-          <span>Entrepreneur · Sales · AI/ML · SWE</span>
+        <div
+          className="hero-badge"
+          aria-label="Entrepreneur, Sales, AI/ML, SWE"
+        >
+          <span className="hero-badge-dot" aria-hidden="true" />
+          <span className="hero-badge-text">Entrepreneur</span>
+          <span className="hero-badge-dot" aria-hidden="true" />
+          <span className="hero-badge-text">Sales</span>
+          <span className="hero-badge-dot" aria-hidden="true" />
+          <span className="hero-badge-text">AI/ML</span>
+          <span className="hero-badge-dot" aria-hidden="true" />
+          <span className="hero-badge-text">SWE</span>
         </div>
 
         <h1

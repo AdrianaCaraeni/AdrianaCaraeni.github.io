@@ -1,12 +1,13 @@
 import { useCallback, useEffect, useState } from 'react'
+import { Link, useLocation } from 'react-router-dom'
 
-const SECTION_IDS = ['hero', 'experience', 'blog', 'about', 'contact']
+const SECTION_IDS_HOME = ['hero', 'testimonials', 'portfolio', 'blog', 'about', 'contact']
 const NAV_OFFSET = 88
 
-function getActiveId() {
+function getActiveSectionId() {
   const y = window.scrollY + NAV_OFFSET
   let active = 'hero'
-  for (const id of SECTION_IDS) {
+  for (const id of SECTION_IDS_HOME) {
     const el = document.getElementById(id)
     if (!el) continue
     const top = el.offsetTop
@@ -15,15 +16,20 @@ function getActiveId() {
   return active
 }
 
-export default function Navbar({ onNameClick }) {
+export default function Navbar({ onLogoClick }) {
+  const location = useLocation()
+  const isHome = location.pathname === '/'
+
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
-  const [active, setActive] = useState('hero')
+  const [activeSection, setActiveSection] = useState('hero')
 
   const updateScroll = useCallback(() => {
     setScrolled(window.scrollY > 50)
-    setActive(getActiveId())
-  }, [])
+    if (isHome) {
+      setActiveSection(getActiveSectionId())
+    }
+  }, [isHome])
 
   useEffect(() => {
     updateScroll()
@@ -35,20 +41,28 @@ export default function Navbar({ onNameClick }) {
     }
   }, [updateScroll])
 
+  useEffect(() => {
+    if (isHome) {
+      setActiveSection(getActiveSectionId())
+    }
+  }, [isHome, location.pathname])
+
   const closeMenu = () => setMenuOpen(false)
 
-  const linkClass = (id) =>
-    ['nav-link', active === id ? 'is-active' : ''].filter(Boolean).join(' ')
+  const sectionLinkClass = (id) =>
+    ['nav-link', isHome && activeSection === id ? 'is-active' : ''].filter(Boolean).join(' ')
+
+  const experienceActive = location.pathname === '/experience'
 
   return (
     <header className={`site-nav ${scrolled ? 'is-scrolled' : ''}`}>
       <nav className="container-page" aria-label="Primary">
-        <a
-          href="#hero"
+        <Link
+          to="/"
           className="nav-logo"
           onClick={(e) => {
             e.preventDefault()
-            onNameClick?.()
+            onLogoClick?.()
             closeMenu()
           }}
         >
@@ -56,34 +70,43 @@ export default function Navbar({ onNameClick }) {
             <span className="nav-logo-mark-letter">A</span>
           </span>
           <span className="nav-logo-text">Adriana Caraeni</span>
-        </a>
+        </Link>
 
         <div className={`nav-links-wrap ${menuOpen ? 'is-open' : ''}`}>
           <ul className="nav-links">
             <li>
-              <a href="#experience" className={linkClass('experience')} onClick={closeMenu}>
+              <Link
+                to="/experience"
+                className={['nav-link', experienceActive ? 'is-active' : ''].filter(Boolean).join(' ')}
+                onClick={closeMenu}
+              >
                 Experience
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#blog" className={linkClass('blog')} onClick={closeMenu}>
+              <Link to="/#portfolio" className={sectionLinkClass('portfolio')} onClick={closeMenu}>
+                Portfolio
+              </Link>
+            </li>
+            <li>
+              <Link to="/#blog" className={sectionLinkClass('blog')} onClick={closeMenu}>
                 Blog
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#about" className={linkClass('about')} onClick={closeMenu}>
+              <Link to="/#about" className={sectionLinkClass('about')} onClick={closeMenu}>
                 About
-              </a>
+              </Link>
             </li>
           </ul>
-          <a href="#contact" className="nav-cta nav-mobile-cta" onClick={closeMenu}>
+          <Link to="/#contact" className="nav-cta nav-mobile-cta" onClick={closeMenu}>
             Let&apos;s Work Together
-          </a>
+          </Link>
         </div>
 
-        <a href="#contact" className="nav-cta nav-desktop-cta">
+        <Link to="/#contact" className="nav-cta nav-desktop-cta">
           Let&apos;s Work Together
-        </a>
+        </Link>
 
         <button
           type="button"

@@ -21,6 +21,14 @@ export default function Testimonials() {
     setIndex(((i % n) + n) % n)
   }, [n])
 
+  const goPrev = useCallback(() => {
+    setIndex((i) => (i - 1 + n) % n)
+  }, [n])
+
+  const goNext = useCallback(() => {
+    setIndex((i) => (i + 1) % n)
+  }, [n])
+
   useEffect(() => {
     const id = setInterval(() => {
       setIndex((i) => (i + 1) % n)
@@ -41,7 +49,41 @@ export default function Testimonials() {
           Testimonials
         </h2>
 
-        <div className="testimonials-card surface-card">
+        <div className="testimonials-carousel">
+          <button
+            type="button"
+            className="testimonials-arrow testimonials-arrow--prev"
+            onClick={goPrev}
+            aria-label="Previous testimonial"
+          >
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path
+                d="M15 18l-6-6 6-6"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </button>
+
+          <div
+            className="testimonials-card surface-card"
+            tabIndex={0}
+            role="article"
+            aria-label={`Testimonial from ${item.name}`}
+            onClick={(e) => e.currentTarget.focus()}
+            onKeyDown={(e) => {
+              if (e.key === 'ArrowLeft') {
+                e.preventDefault()
+                goPrev()
+              }
+              if (e.key === 'ArrowRight') {
+                e.preventDefault()
+                goNext()
+              }
+            }}
+          >
           <div className="testimonials-quote-deco" aria-hidden="true">
             &ldquo;
           </div>
@@ -94,6 +136,24 @@ export default function Testimonials() {
               </p>
             ))}
           </div>
+          </div>
+
+          <button
+            type="button"
+            className="testimonials-arrow testimonials-arrow--next"
+            onClick={goNext}
+            aria-label="Next testimonial"
+          >
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path
+                d="M9 18l6-6-6-6"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </button>
         </div>
 
         <div className="testimonials-dots" role="tablist" aria-label="Choose testimonial">

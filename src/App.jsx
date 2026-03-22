@@ -1,29 +1,44 @@
 import { useState } from 'react'
-import Contact from './components/Contact.jsx'
-import Hero from './components/Hero.jsx'
-import Testimonials from './components/Testimonials.jsx'
+import { BrowserRouter, Route, Routes, useLocation, useNavigate } from 'react-router-dom'
 import Navbar from './components/Navbar.jsx'
 import Splash from './components/Splash.jsx'
+import ExperiencePage from './pages/ExperiencePage.jsx'
+import HomePage from './pages/HomePage.jsx'
 
-function App() {
+function AppShell() {
   const [splashKey, setSplashKey] = useState(0)
+  const location = useLocation()
+  const navigate = useNavigate()
+
   const replaySplash = () => setSplashKey((k) => k + 1)
+
+  const handleLogoClick = () => {
+    if (location.pathname !== '/') {
+      navigate('/')
+    }
+    setSplashKey((k) => k + 1)
+  }
+
+  const showSplash = location.pathname === '/'
 
   return (
     <>
-      <Splash key={splashKey} />
-      <Navbar onNameClick={replaySplash} />
+      {showSplash && <Splash key={splashKey} />}
+      <Navbar onLogoClick={handleLogoClick} />
       <main>
-        <Hero onNameClick={replaySplash} />
-        <Testimonials />
-        {/* Anchor targets for nav (inner pages added later) */}
-        <div id="experience" className="anchor-target" />
-        <div id="blog" className="anchor-target" />
-        <div id="about" className="anchor-target" />
-        <Contact />
+        <Routes>
+          <Route path="/" element={<HomePage onNameClick={replaySplash} />} />
+          <Route path="/experience" element={<ExperiencePage />} />
+        </Routes>
       </main>
     </>
   )
 }
 
-export default App
+export default function App() {
+  return (
+    <BrowserRouter>
+      <AppShell />
+    </BrowserRouter>
+  )
+}
