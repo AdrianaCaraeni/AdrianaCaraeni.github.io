@@ -31,7 +31,7 @@ export default function Hero({ onNameClick }) {
         </h1>
         <p className="hero-tagline">I grow businesses.</p>
         <p className="hero-body">
-          Founder, operator, and engineer obsessed with scaling ideas into reality.
+          Founder, Saleswomen, and Engineer obsessed with scaling ideas into reality.
         </p>
       </div>
     </section>
