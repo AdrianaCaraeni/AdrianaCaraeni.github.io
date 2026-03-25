@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { BrowserRouter, Navigate, Route, Routes, useLocation, useNavigate } from 'react-router-dom'
 import Navbar from './components/Navbar.jsx'
 import Splash from './components/Splash.jsx'
@@ -19,6 +19,22 @@ function AppShell() {
   }
 
   const showSplash = location.pathname === '/'
+
+  useEffect(() => {
+    if (location.pathname !== '/' || !location.hash) return
+
+    const targetId = location.hash.slice(1)
+    if (!targetId) return
+
+    let raf = 0
+    raf = requestAnimationFrame(() => {
+      const target = document.getElementById(targetId)
+      if (!target) return
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    })
+
+    return () => cancelAnimationFrame(raf)
+  }, [location.pathname, location.hash])
 
   return (
     <>

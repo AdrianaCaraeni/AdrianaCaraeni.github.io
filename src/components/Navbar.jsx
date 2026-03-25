@@ -49,6 +49,21 @@ export default function Navbar({ onLogoClick }) {
 
   const closeMenu = () => setMenuOpen(false)
 
+  const scrollToSection = (id) => {
+    const target = document.getElementById(id)
+    if (!target) return
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    window.history.replaceState(null, '', `/#${id}`)
+    setActiveSection(id)
+  }
+
+  const handleSectionClick = (id) => (e) => {
+    closeMenu()
+    if (!isHome) return
+    e.preventDefault()
+    scrollToSection(id)
+  }
+
   const sectionLinkClass = (id) =>
     ['nav-link', isHome && activeSection === id ? 'is-active' : ''].filter(Boolean).join(' ')
 
@@ -73,32 +88,44 @@ export default function Navbar({ onLogoClick }) {
         <div className={`nav-links-wrap ${menuOpen ? 'is-open' : ''}`}>
           <ul className="nav-links">
             <li>
-              <Link to="/#about" className={sectionLinkClass('about')} onClick={closeMenu}>
+              <Link to="/#about" className={sectionLinkClass('about')} onClick={handleSectionClick('about')}>
                 About
               </Link>
             </li>
             <li>
-              <Link to="/#experience" className={sectionLinkClass('experience')} onClick={closeMenu}>
+              <Link
+                to="/#experience"
+                className={sectionLinkClass('experience')}
+                onClick={handleSectionClick('experience')}
+              >
                 Experience
               </Link>
             </li>
             <li>
-              <Link to="/#portfolio" className={sectionLinkClass('portfolio')} onClick={closeMenu}>
+              <Link
+                to="/#portfolio"
+                className={sectionLinkClass('portfolio')}
+                onClick={handleSectionClick('portfolio')}
+              >
                 Portfolio
               </Link>
             </li>
             <li>
-              <Link to="/#testimonials" className={sectionLinkClass('testimonials')} onClick={closeMenu}>
+              <Link
+                to="/#testimonials"
+                className={sectionLinkClass('testimonials')}
+                onClick={handleSectionClick('testimonials')}
+              >
                 Testimonials
               </Link>
             </li>
           </ul>
-          <Link to="/#contact" className="nav-cta nav-mobile-cta" onClick={closeMenu}>
+          <Link to="/#contact" className="nav-cta nav-mobile-cta" onClick={handleSectionClick('contact')}>
             Let&apos;s Work Together
           </Link>
         </div>
 
-        <Link to="/#contact" className="nav-cta nav-desktop-cta">
+        <Link to="/#contact" className="nav-cta nav-desktop-cta" onClick={handleSectionClick('contact')}>
           Let&apos;s Work Together
         </Link>
 
