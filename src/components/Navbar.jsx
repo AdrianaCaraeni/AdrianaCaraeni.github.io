@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 
-const SECTION_IDS_HOME = ['hero', 'testimonials', 'portfolio', 'blog', 'about', 'contact']
+const SECTION_IDS_HOME = ['hero', 'about', 'experience', 'portfolio', 'testimonials', 'contact']
 const NAV_OFFSET = 88
 
 function getActiveSectionId() {
@@ -32,7 +32,7 @@ export default function Navbar({ onLogoClick }) {
   }, [isHome])
 
   useEffect(() => {
-    updateScroll()
+    queueMicrotask(() => updateScroll())
     window.addEventListener('scroll', updateScroll, { passive: true })
     window.addEventListener('resize', updateScroll, { passive: true })
     return () => {
@@ -43,7 +43,7 @@ export default function Navbar({ onLogoClick }) {
 
   useEffect(() => {
     if (isHome) {
-      setActiveSection(getActiveSectionId())
+      queueMicrotask(() => setActiveSection(getActiveSectionId()))
     }
   }, [isHome, location.pathname])
 
@@ -51,8 +51,6 @@ export default function Navbar({ onLogoClick }) {
 
   const sectionLinkClass = (id) =>
     ['nav-link', isHome && activeSection === id ? 'is-active' : ''].filter(Boolean).join(' ')
-
-  const experienceActive = location.pathname === '/experience'
 
   return (
     <header className={`site-nav ${scrolled ? 'is-scrolled' : ''}`}>
@@ -75,11 +73,12 @@ export default function Navbar({ onLogoClick }) {
         <div className={`nav-links-wrap ${menuOpen ? 'is-open' : ''}`}>
           <ul className="nav-links">
             <li>
-              <Link
-                to="/experience"
-                className={['nav-link', experienceActive ? 'is-active' : ''].filter(Boolean).join(' ')}
-                onClick={closeMenu}
-              >
+              <Link to="/#about" className={sectionLinkClass('about')} onClick={closeMenu}>
+                About
+              </Link>
+            </li>
+            <li>
+              <Link to="/#experience" className={sectionLinkClass('experience')} onClick={closeMenu}>
                 Experience
               </Link>
             </li>
@@ -89,13 +88,8 @@ export default function Navbar({ onLogoClick }) {
               </Link>
             </li>
             <li>
-              <Link to="/#blog" className={sectionLinkClass('blog')} onClick={closeMenu}>
-                Blog
-              </Link>
-            </li>
-            <li>
-              <Link to="/#about" className={sectionLinkClass('about')} onClick={closeMenu}>
-                About
+              <Link to="/#testimonials" className={sectionLinkClass('testimonials')} onClick={closeMenu}>
+                Testimonials
               </Link>
             </li>
           </ul>

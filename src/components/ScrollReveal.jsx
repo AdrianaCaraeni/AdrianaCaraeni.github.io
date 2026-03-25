@@ -5,9 +5,10 @@ import { useScrollReveal } from '../hooks/useScrollReveal'
  * Wrapper that applies scroll-triggered .reveal → .visible (IntersectionObserver).
  */
 const ScrollReveal = forwardRef(function ScrollReveal(
-  { as: Tag = 'div', className = '', children, ...rest },
+  { as = 'div', className = '', children, ...rest },
   forwardedRef,
 ) {
+  const Component = as
   const revealRef = useScrollReveal()
   const combined = ['reveal', className].filter(Boolean).join(' ')
 
@@ -21,9 +22,9 @@ const ScrollReveal = forwardRef(function ScrollReveal(
   )
 
   return (
-    <Tag ref={setRef} className={combined} {...rest}>
+    <Component ref={setRef} className={combined} {...rest}>
       {children}
-    </Tag>
+    </Component>
   )
 })
 

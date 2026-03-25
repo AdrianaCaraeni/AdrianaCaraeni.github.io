@@ -1,13 +1,12 @@
 import { useEffect, useRef, useState } from 'react'
 
-const DURATION_MS = 5400
-const ROTATE_MS = 1260
+const DURATION_MS = 1900
+const ROTATE_MS = 900
 
 const ROTATING_LINES = [
   'I grow businesses.',
   'Entrepreneur · Sales · AI/ML · SWE',
   'Scaling ideas into reality.',
-  'Bold, modern, technical — human.',
 ]
 
 export default function Splash() {
@@ -55,11 +54,13 @@ export default function Splash() {
       role="status"
     >
       <div className="splash-inner">
-        <h1 className="splash-name">Adriana Caraeni</h1>
-        <div className="splash-rotator" aria-live="polite">
-          <p key={lineIndex} className="splash-rotator-line">
-            {ROTATING_LINES[lineIndex]}
-          </p>
+        <div className="splash-brand">
+          <h1 className="splash-name">Adriana Caraeni</h1>
+          <div className="splash-rotator" aria-live="polite">
+            <p key={lineIndex} className="splash-rotator-line">
+              {ROTATING_LINES[lineIndex]}
+            </p>
+          </div>
         </div>
         <div className="splash-bar-wrap">
           <div className="splash-bar-track">

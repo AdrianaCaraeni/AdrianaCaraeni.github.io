@@ -1,8 +1,7 @@
 import { useState } from 'react'
-import { BrowserRouter, Route, Routes, useLocation, useNavigate } from 'react-router-dom'
+import { BrowserRouter, Navigate, Route, Routes, useLocation, useNavigate } from 'react-router-dom'
 import Navbar from './components/Navbar.jsx'
 import Splash from './components/Splash.jsx'
-import ExperiencePage from './pages/ExperiencePage.jsx'
 import HomePage from './pages/HomePage.jsx'
 
 function AppShell() {
@@ -28,7 +27,7 @@ function AppShell() {
       <main>
         <Routes>
           <Route path="/" element={<HomePage onNameClick={replaySplash} />} />
-          <Route path="/experience" element={<ExperiencePage />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </main>
     </>

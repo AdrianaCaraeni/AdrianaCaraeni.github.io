@@ -65,7 +65,7 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="contact anchor-target section-pad" aria-labelledby="contact-heading">
+    <section id="contact" className="contact section-pad" aria-labelledby="contact-heading">
       <div className="container-page">
         <h2 id="contact-heading" className="contact-heading">
           Get In Touch

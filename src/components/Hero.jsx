@@ -1,14 +1,22 @@
+import { useParallax } from '../hooks/useParallax.js'
+
 export default function Hero({ onNameClick }) {
+  const parallaxRef = useParallax(0.06)
+
   return (
-    <section id="hero" className="hero anchor-target" aria-label="Introduction">
-      <div className="hero-orb hero-orb--1" aria-hidden="true" />
-      <div className="hero-orb hero-orb--2" aria-hidden="true" />
+    <section
+      ref={parallaxRef}
+      id="hero"
+      className="hero hero--parallax"
+      aria-label="Introduction"
+    >
+      <div className="hero-parallax-layer" aria-hidden="true">
+        <div className="hero-orb hero-orb--1" />
+        <div className="hero-orb hero-orb--2" />
+      </div>
 
       <div className="hero-inner">
-        <div
-          className="hero-badge"
-          aria-label="Entrepreneur, Sales, AI/ML, SWE"
-        >
+        <div className="hero-badge" aria-label="Entrepreneur, Sales, AI/ML, SWE">
           <span className="hero-badge-dot" aria-hidden="true" />
           <span className="hero-badge-text">Entrepreneur</span>
           <span className="hero-badge-dot" aria-hidden="true" />
