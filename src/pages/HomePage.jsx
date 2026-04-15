@@ -6,10 +6,10 @@ import Hero from '../components/Hero.jsx'
 import PortfolioSection from '../components/PortfolioSection.jsx'
 import Testimonials from '../components/Testimonials.jsx'
 
-export default function HomePage({ onNameClick }) {
+export default function HomePage() {
   return (
     <div className="home-page">
-      <Hero onNameClick={onNameClick} />
+      <Hero />
       <AboutSection />
       <Experience />
       <PortfolioSection />

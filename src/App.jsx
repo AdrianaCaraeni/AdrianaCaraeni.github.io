@@ -9,8 +9,6 @@ function AppShell() {
   const location = useLocation()
   const navigate = useNavigate()
 
-  const replaySplash = () => setSplashKey((k) => k + 1)
-
   const handleLogoClick = () => {
     if (location.pathname !== '/') {
       navigate('/')
@@ -42,7 +40,7 @@ function AppShell() {
       <Navbar onLogoClick={handleLogoClick} />
       <main>
         <Routes>
-          <Route path="/" element={<HomePage onNameClick={replaySplash} />} />
+          <Route path="/" element={<HomePage />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </main>
