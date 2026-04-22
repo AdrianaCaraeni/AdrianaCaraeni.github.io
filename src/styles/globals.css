@@ -2056,8 +2056,9 @@ button {
   line-height: 1.55;
   color: #000000;
   text-decoration: none;
-  max-width: min(100%, 52rem);
+  max-width: none;
   display: inline-block;
+  white-space: nowrap;
   transition: color 0.2s ease;
 }
 
@@ -2069,6 +2070,12 @@ button {
   outline: 2px solid var(--accent-primary);
   outline-offset: 3px;
   border-radius: 2px;
+}
+
+@media (max-width: 900px) {
+  .portfolio-paper-link {
+    white-space: normal;
+  }
 }
 
 @media (max-width: 600px) {

@@ -8,8 +8,11 @@ const POSTERS = [
 
 const PAPERS = [
   {
-    title:
-      'Cognitive Offloading in Agile Teams: How Artificial Intelligence Reshapes Risk Assessment and Planning Quality',
+    title: 'Potential Energy Savings from Quantum Computing-Based Route Optimization',
+    href: 'https://arxiv.org/abs/2604.16718',
+  },
+  {
+    title: 'Cognitive Offloading in Agile Teams: How Artificial Intelligence Reshapes Risk Assessment and Planning Quality',
     href: 'https://arxiv.org/abs/2604.13814',
   },
   {
