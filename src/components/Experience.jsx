@@ -60,6 +60,16 @@ function ExperienceCard({ exp }) {
 
         <p className="experience-card-role">{exp.roleTitle}</p>
 
+        {exp.bulletPoints?.length ? (
+          <ul className="experience-card-bullets">
+            {exp.bulletPoints.map((point) => (
+              <li key={point} className="experience-card-bullet">
+                {point}
+              </li>
+            ))}
+          </ul>
+        ) : null}
+
         <p className="experience-card-roles-line">{exp.rolesLine}</p>
 
         {exp.description?.trim() ? (

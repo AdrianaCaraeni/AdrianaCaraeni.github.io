@@ -1873,6 +1873,22 @@ button {
   line-height: 1.45;
 }
 
+.experience-card-bullets {
+  margin: 0 0 var(--space-sm);
+  padding-left: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.experience-card-bullet {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 400;
+  color: var(--text-muted);
+  line-height: 1.45;
+}
+
 /* Industry badge + date: always one horizontal row */
 .experience-card-meta {
   display: flex;
