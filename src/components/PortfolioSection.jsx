@@ -4,6 +4,7 @@ import { useCallback, useState } from 'react'
 const POSTERS = [
   { src: '/CIIR-probing.png', alt: 'CIIR probing research poster' },
   { src: '/ERSP%20Poster.png', alt: 'ERSP poster' },
+  { src: '/Cognitive%20Offloading.png', alt: 'Cognitive Offloading poster' },
 ]
 
 const PAPERS = [
