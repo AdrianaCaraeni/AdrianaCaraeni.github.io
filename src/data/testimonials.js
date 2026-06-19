@@ -26,14 +26,15 @@ export const testimonials = [
     ],
   },
   {
-    name: 'Alex Shick',
-    image: '/alex_shick.jpg',
-    roles: 'Founder & CEO of Vierra Digital',
-    date: 'Dec 17, 2025',
+    name: 'Ria Singh',
+    image: '/ria_singh.jpg',
+    roles: 'Artificial Intelligence Intern @ Commonwealth of Massachusetts',
+    date: 'May 15, 2026',
     rating: '5.0',
     paragraphs: [
-      'I worked with Adriana in CICS 320 at UMass; she was one of those team members who would raise the quality of any group she was part of. From the start of the course, Adriana always showed a great mastery of project management principles, adding a layer of organization, accountability, and leadership to make complex projects feel approachable.',
-      'What stood out the most, however, was how Adriana was able to translate theory into execution.',
+      'From day one, Adriana stood out for how naturally she communicated and collaborated with everyone around her,
+      whether it was syncing with me on deliverables, asking the right questions in meetings, or making sure no one was working in a silo. What impressed me most was how she made collaboration feel effortless. 
+      She had a way of keeping us aligned without being overbearing, and she was always the first to initiate communication or offer context when it was needed. ',
     ],
   },
   {
