@@ -32,9 +32,9 @@ export const testimonials = [
     date: 'May 15, 2026',
     rating: '5.0',
     paragraphs: [
-      'From day one, Adriana stood out for how naturally she communicated and collaborated with everyone around her,
-      whether it was syncing with me on deliverables, asking the right questions in meetings, or making sure no one was working in a silo. What impressed me most was how she made collaboration feel effortless. 
-      She had a way of keeping us aligned without being overbearing, and she was always the first to initiate communication or offer context when it was needed. ',
+      'From day one, Adriana stood out for how naturally she communicated and collaborated with everyone around her,',
+      'whether it was syncing with me on deliverables, asking the right questions in meetings, or making sure no one was working in a silo. What impressed me most was how she made collaboration feel effortless.',
+      'She had a way of keeping us aligned without being overbearing, and she was always the first to initiate communication or offer context when it was needed.',
     ],
   },
   {
