@@ -27,7 +27,7 @@ export const testimonials = [
   },
   {
     name: 'Ria Singh',
-    image: '/ria_singh.jpg',
+    image: '/ria_singh.jfif',
     roles: 'Artificial Intelligence Intern @ Commonwealth of Massachusetts',
     date: 'May 15, 2026',
     rating: '5.0',
