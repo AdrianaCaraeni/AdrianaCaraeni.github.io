@@ -6,6 +6,7 @@ const LOGO_FALLBACK = {
   breakthrough: 'BT',
   mwp: 'MW',
   commonwealth: 'CM',
+  'apps-for-good': 'AG',
 }
 
 function ExperienceCard({ exp }) {

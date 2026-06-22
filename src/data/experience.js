@@ -63,6 +63,22 @@ export const experiences = [
     logo: '/commonwealth_logo.jpg',
     website: 'https://www.mass.gov/',
   },
+  {
+    id: 'apps-for-good',
+    company: 'Apps for Good: CapMetro',
+    roleTitle: 'Team Lead + Full Stack Software Engineer · Austin, Texas',
+    dateRange: 'June – August 2025',
+    industry: 'Civic Technology',
+    rolesLine: 'TEAM LEAD / FULL STACK SOFTWARE ENGINEERING',
+    description: '',
+    bulletPoints: [
+      'Led a 9-person distributed team to ship a real-time bus tracking application for CapMetro, integrating the Texas Open Data Portal API and Google Maps with 15-second live location refresh, deployed to production on Digital Ocean.',
+      'Architected the WebSocket event schema, REST endpoint structure, and PostgreSQL data layer from scratch, designing for sub-second query performance across 200+ active bus routes.',
+      'Built a multi-table ETL pipeline converting CapMetro’s GTFS feed (stops, routes, trips, stop times, shapes) from raw CSV into optimized SQL INSERT statements, supporting the WebSocket-driven live tracking backend.',
+    ],
+    logo: '/apps_for_good.png',
+    website: 'https://teamup.us/',
+  },
 ]
 
 export function isOngoing(dateRange) {
