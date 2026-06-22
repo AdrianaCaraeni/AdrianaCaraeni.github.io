@@ -3,7 +3,7 @@ import { experiences, isOngoing } from '../data/experience.js'
 
 const LOGO_FALLBACK = {
   fidelity: 'FI',
-  vierra: 'VR',
+  breakthrough: 'BT',
   mwp: 'MW',
   commonwealth: 'CM',
 }

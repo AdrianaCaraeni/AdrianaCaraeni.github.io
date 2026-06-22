@@ -54,7 +54,10 @@ export const aboutExperience = [
     role: 'Machine Learning Engineer',
     dates: 'March 2026 – Present',
     location: null,
-    bullets: [],
+    bullets: [
+      'Six weeks of machine learning coursework and labs',
+      'Fall machine learning project with partner company.',
+    ],
   },
   {
     type: 'single',
@@ -63,17 +66,6 @@ export const aboutExperience = [
     dates: 'February 2026 – Present',
     location: null,
     bullets: [],
-  },
-  {
-    type: 'single',
-    org: 'Vierra Digital LLC',
-    role: 'Sales Strategist',
-    dates: 'January 2026 – Present',
-    location: 'Boston, MA',
-    bullets: [
-      'Generated 100+ qualified leads through outreach and networking',
-      'Built and maintained relationships with 20+ prospects',
-    ],
   },
   {
     type: 'group',
