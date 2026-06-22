@@ -9,8 +9,10 @@ export const experiences = [
     dateRange: 'Summer 2026',
     industry: 'Financial Services',
     rolesLine: 'FULL STACK SOFTWARE ENGINEERING',
-    description: 'Incoming Software.',
-    bulletPoints: [],
+    description: '',
+    bulletPoints: [
+      'Android developer on the flagship Fidelity mobile application.',
+    ],
     logo: '/fidelity_investments_logo.jpg',
     website: 'https://www.fidelity.com/',
   },
