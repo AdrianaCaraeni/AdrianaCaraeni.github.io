@@ -17,22 +17,22 @@ export default function Hero() {
 
       <div className="hero-inner">
         <div className="hero-copy">
-          <div className="hero-badge" aria-label="Entrepreneur, Sales, AI/ML, SWE">
+          <div className="hero-badge" aria-label="FinTech, Machine Learning, Artificial Intelligence: LLMs, Full Stack Software Engineering">
             <span className="hero-badge-dot" aria-hidden="true" />
-            <span className="hero-badge-text">Entrepreneur</span>
+            <span className="hero-badge-text">FinTech</span>
             <span className="hero-badge-dot" aria-hidden="true" />
-            <span className="hero-badge-text">Sales</span>
+            <span className="hero-badge-text">Machine Learning</span>
             <span className="hero-badge-dot" aria-hidden="true" />
-            <span className="hero-badge-text">AI/ML</span>
+            <span className="hero-badge-text">Artificial Intelligence: LLMs</span>
             <span className="hero-badge-dot" aria-hidden="true" />
-            <span className="hero-badge-text">SWE</span>
+            <span className="hero-badge-text">Full Stack Software Engineering</span>
           </div>
 
           <h1 className="hero-tagline">I build things that matter.</h1>
           <p className="hero-body">
             Junior at UMass Amherst studying CS, Math and Business (3.96 GPA). I build full-stack apps and AI
             systems - from video translation pipelines serving 1,200+ students to a novel LLM reasoning method
-            published through Algoverse. Currently architecting AI tools at the Commonwealth of MA, and incoming SWE
+            published through Algoverse. Architected AI tools at the Commonwealth of MA through May 2026, and incoming SWE
             Intern at Fidelity Investments and MIT AI Studio Fellow.
           </p>
           <a className="hero-work-link" href="#portfolio">

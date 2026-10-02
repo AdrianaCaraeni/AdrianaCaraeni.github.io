@@ -4,7 +4,6 @@ import { experiences, isOngoing } from '../data/experience.js'
 const LOGO_FALLBACK = {
   fidelity: 'FI',
   breakthrough: 'BT',
-  mwp: 'MW',
   commonwealth: 'CM',
   'apps-for-good': 'AG',
 }

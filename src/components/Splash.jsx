@@ -1,12 +1,13 @@
 import { useEffect, useRef, useState } from 'react'
 
-const DURATION_MS = 1900
+const DURATION_MS = 3600
 const ROTATE_MS = 900
 
 const ROTATING_LINES = [
-  'I grow businesses.',
-  'Entrepreneur · Sales · AI/ML · SWE',
-  'Scaling ideas into reality.',
+  'FinTech',
+  'Machine Learning',
+  'Artificial Intelligence: LLMs',
+  'Full Stack Software Engineering',
 ]
 
 export default function Splash() {

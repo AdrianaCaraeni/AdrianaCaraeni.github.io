@@ -6,7 +6,7 @@ export const aboutBio = {
   paragraphs: [
     'Adriana Caraeni is a dual-degree Computer Science and Computing Mathematics student at UMass Amherst, maintaining a 3.95+ GPA while pursuing rigorous coursework and research at the intersection of AI and software engineering.',
     'As an AI researcher and full-stack developer—and a Goldwater Scholarship nominee—she focuses on applied machine learning, LLM reasoning, and shipping tools that solve real problems. She is multilingual in English, Romanian, and French.',
-    'Her experience spans public-sector AI engineering, enterprise fintech, startup sales and leadership, and academic research labs. She has interned with the Commonwealth of Massachusetts (AI co-op), is an incoming software engineering intern at Fidelity Investments, and conducts research with Algoverse AI.',
+    'Her experience spans public-sector AI engineering, enterprise FinTech, machine learning, full-stack software engineering, and academic research labs. She has interned with the Commonwealth of Massachusetts (AI co-op), is an incoming software engineering intern at Fidelity Investments, and conducts research with Algoverse AI.',
   ],
 }
 
@@ -82,7 +82,7 @@ export const aboutExperience = [
         dates: 'May – August 2025',
         location: null,
         bullets: [
-          'Mentored by Senior Systems Architect in enterprise fintech architecture',
+          'Mentored by Senior Systems Architect in enterprise FinTech architecture',
         ],
       },
     ],
@@ -93,7 +93,7 @@ export const aboutExperience = [
     roles: [
       {
         role: 'AI Co-op',
-        dates: 'October 2025 – Present',
+        dates: 'October 2025 – May 2026',
         location: null,
         bullets: [
           "Resolved 10+ critical bugs in the Government's Legal Office Tool",

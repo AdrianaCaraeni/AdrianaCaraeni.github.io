@@ -38,7 +38,6 @@ export const SKILL_GROUPS = [
       'SEO',
       'GEO',
       'Copywriting',
-      'Sales',
       'Management',
       'Staffing',
       'Consulting',
