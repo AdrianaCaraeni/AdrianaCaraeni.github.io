@@ -14,6 +14,7 @@ export const aboutEducation = [
   {
     school: 'University of Massachusetts Amherst',
     degree: 'Computer Science & Computing Mathematics Dual Degree',
+    note: 'Business Minor, Early Research Scholars Program, iCons Certificate',
     dates: 'Sept 2023 – Present',
     location: 'Amherst, MA',
     gpa: '3.95+',

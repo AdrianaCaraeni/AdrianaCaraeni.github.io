@@ -44,8 +44,8 @@ export default function Hero() {
           <svg className="hero-head-svg" viewBox="0 0 440 380" fill="none" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <linearGradient id="heroHeadStroke" x1="75" y1="36" x2="330" y2="328" gradientUnits="userSpaceOnUse">
-                <stop offset="0%" stopColor="rgba(37,99,235,0.9)" />
-                <stop offset="100%" stopColor="rgba(99,102,241,0.95)" />
+                <stop offset="0%" stopColor="rgba(244,176,198,0.95)" />
+                <stop offset="100%" stopColor="rgba(255,192,214,0.9)" />
               </linearGradient>
             </defs>
             <path

@@ -10,6 +10,7 @@ export default function AboutEducation() {
           <article key={edu.school} className="about-edu-card about-edu-card--inner">
             <h4 className="about-edu-school">{edu.school}</h4>
             <p className="about-edu-degree">{edu.degree}</p>
+            {edu.note ? <p className="about-edu-note">{edu.note}</p> : null}
             <p className="about-edu-meta">
               {edu.dates}
               <span className="about-edu-sep"> · </span>

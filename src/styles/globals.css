@@ -5,46 +5,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,300&display=swap');
 
 :root {
-  /* Core Blues */
-  --blue-50: #eff6ff;
-  --blue-100: #dbeafe;
-  --blue-200: #bfdbfe;
-  --blue-300: #93c5fd;
-  --blue-400: #60a5fa;
-  --blue-500: #3b82f6;
-  --blue-600: #2563eb;
-  --blue-700: #1d4ed8;
-  --blue-800: #1e40af;
-  --blue-900: #1e3a8a;
+  /* Pastel pinks — baby, light, and blush */
+  --blue-50: #fff7fa;
+  --blue-100: #ffe9f1;
+  --blue-200: #ffd6e6;
+  --blue-300: #f8c4d8;
+  --blue-400: #f3b4cc;
+  --blue-500: #eea3c2;
+  --blue-600: #e892b6;
+  --blue-700: #111111;
+  --blue-800: #f7c6d8;
+  --blue-900: #ffe4ee;
 
   /* Light theme — page & surfaces */
-  --bg-base: #f0f4fa;
+  --bg-base: #ffffff;
   --bg-surface: #ffffff;
-  --bg-elevated: #f8fafc;
-  --glass-bg: rgba(255, 255, 255, 0.58);
-  --glass-bg-strong: rgba(255, 255, 255, 0.82);
-  --glass-border: rgba(255, 255, 255, 0.85);
-  --glass-border-soft: rgba(148, 163, 184, 0.35);
-  --glass-shadow: 0 8px 32px rgba(15, 23, 42, 0.07);
-  --glass-shadow-hover: 0 16px 48px rgba(15, 23, 42, 0.1);
+  --bg-elevated: #fff8fb;
+  --glass-bg: rgba(255, 255, 255, 0.78);
+  --glass-bg-strong: rgba(255, 255, 255, 0.92);
+  --glass-border: rgba(255, 255, 255, 0.9);
+  --glass-border-soft: rgba(236, 180, 200, 0.45);
+  --glass-shadow: 0 8px 32px rgba(17, 17, 17, 0.06);
+  --glass-shadow-hover: 0 16px 48px rgba(232, 160, 184, 0.18);
 
-  /* Text (slate on light) */
-  --text-primary: #0f172a;
-  --text-secondary: rgba(15, 23, 42, 0.68);
-  --text-muted: rgba(15, 23, 42, 0.48);
-  --text-on-accent: #ffffff;
+  /* Text */
+  --text-primary: #111111;
+  --text-secondary: rgba(17, 17, 17, 0.72);
+  --text-muted: rgba(17, 17, 17, 0.5);
+  --text-on-accent: #111111;
 
   /* Accents */
-  --accent-primary: #3b82f6;
-  --accent-secondary: #7c3aed;
-  --accent-glow: rgba(59, 130, 246, 0.22);
-  --accent-border: rgba(59, 130, 246, 0.28);
+  --accent-primary: #f4b0c6;
+  --accent-secondary: #ffd6e4;
+  --accent-glow: rgba(244, 176, 198, 0.45);
+  --accent-border: rgba(236, 168, 192, 0.55);
 
   /* Gradients */
-  --grad-hero: linear-gradient(135deg, #2563eb 0%, #60a5fa 50%, #93c5fd 100%);
-  --grad-text: linear-gradient(135deg, #0f172a 0%, #1e40af 38%, #3b82f6 72%, #6366f1 100%);
-  --grad-card: linear-gradient(135deg, rgba(59, 130, 246, 0.08), rgba(99, 102, 241, 0.04));
-  --grad-button: linear-gradient(135deg, #3b82f6, #7c3aed);
+  --grad-hero: linear-gradient(135deg, #ffe4ee 0%, #f7c1d4 50%, #f3a8c4 100%);
+  --grad-text: linear-gradient(100deg, #111111 0%, #111111 68%, #e7a0b8 100%);
+  --grad-card: linear-gradient(135deg, rgba(255, 214, 226, 0.45), rgba(255, 236, 242, 0.2));
+  --grad-button: linear-gradient(135deg, #ffe4ee, #f7c1d4);
 
   /* Spacing */
   --space-xs: 4px;
@@ -441,7 +441,7 @@ button {
   width: 30px;
   height: 30px;
   border-radius: var(--radius-sm);
-  background: rgba(59, 130, 246, 0.1);
+  background: linear-gradient(165deg, #fff7fa 0%, #ffe4ee 100%);
   border: 1px solid var(--accent-border);
   display: flex;
   align-items: center;
@@ -454,7 +454,7 @@ button {
   font-weight: 800;
   font-size: 16px;
   line-height: 1;
-  background: linear-gradient(165deg, #0f172a 0%, #2563eb 45%, #3b82f6 88%, #6366f1 100%);
+  background: linear-gradient(165deg, #f8c4d8 0%, #e892b6 55%, #f4b0c6 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;

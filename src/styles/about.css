@@ -332,6 +332,15 @@
   color: var(--accent-primary);
 }
 
+.about-edu-note {
+  margin: -6px 0 10px;
+  font-size: 0.78rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.45;
+  color: #e892b6;
+}
+
 .about-edu-meta {
   margin: 0 0 var(--space-md);
   font-size: 0.875rem;
