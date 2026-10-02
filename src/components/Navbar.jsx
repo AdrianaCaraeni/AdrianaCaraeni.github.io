@@ -121,12 +121,12 @@ export default function Navbar({ onLogoClick }) {
             </li>
           </ul>
           <Link to="/#contact" className="nav-cta nav-mobile-cta" onClick={handleSectionClick('contact')}>
-            Let&apos;s Work Together
+            Contact Me
           </Link>
         </div>
 
         <Link to="/#contact" className="nav-cta nav-desktop-cta" onClick={handleSectionClick('contact')}>
-          Let&apos;s Work Together
+          Contact Me
         </Link>
 
         <button
