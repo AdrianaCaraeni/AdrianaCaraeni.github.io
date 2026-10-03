@@ -1,10 +1,9 @@
 ﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
   <defs>
-    <linearGradient id="aGrad" x1="4" y1="4" x2="28" y2="28" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#0f172a" />
-      <stop offset="38%" stop-color="#2563eb" />
-      <stop offset="72%" stop-color="#3b82f6" />
-      <stop offset="100%" stop-color="#6366f1" />
+    <linearGradient id="aGrad" x1="6" y1="4" x2="26" y2="28" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#f8c4d8" />
+      <stop offset="55%" stop-color="#e892b6" />
+      <stop offset="100%" stop-color="#f4b0c6" />
     </linearGradient>
   </defs>
   <rect
@@ -13,8 +12,8 @@
     width="30"
     height="30"
     rx="7"
-    fill="rgba(59, 130, 246, 0.1)"
-    stroke="rgba(59, 130, 246, 0.28)"
+    fill="#fff7fa"
+    stroke="#f4b0c6"
     stroke-width="1"
   />
   <path

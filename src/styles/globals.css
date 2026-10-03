@@ -359,10 +359,7 @@ button {
   letter-spacing: -0.02em;
   line-height: 1.1;
   margin: 0 0 var(--space-md);
-  background: var(--grad-text);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #111111;
 }
 
 .splash-bar-wrap {
