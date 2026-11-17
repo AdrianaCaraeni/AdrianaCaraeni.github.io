@@ -51,8 +51,10 @@ export const aboutExperience = [
     dates: 'March 2026 – Present',
     location: null,
     bullets: [
-      'Six weeks of machine learning coursework and labs',
-      'Fall machine learning project with partner company.',
+      'Built a 7- and 14-day harmful algal bloom forecasting model with class-weighted LightGBM on a time-ordered train/test split that keeps future data out of training. Benchmarked it against persistence, logistic regression and decision tree baselines.',
+      'Combined 7 environmental datasets (NOAA weather, satellite chlorophyll, HABSOS bloom samples, nutrients, Mote water temperature) into a 4,187-day table with 14 variables. Converted units, averaged wind correctly using vector components, and flagged each source’s date coverage.',
+      'Cut 7M+ satellite chlorophyll readings down to 1.08M for the Sarasota study area and matched 58,765 bloom sampling events to the nearest reading (within about 5 km and ±1 day) using SciPy cKDTree and pandas merge_asof.',
+      'Led design of the team’s final presentation deck, turning the analysis of 3,451 sampling days into slides for the Challenge Advisor and AI Studio coaches.',
     ],
   },
   {
