@@ -21,7 +21,7 @@ export const aboutEducation = [
   },
   {
     school: 'University of Massachusetts Amherst',
-    level: 'Undergrad',
+    level: 'Undergraduate',
     degree: 'Computer Science & Computing Mathematics Dual Degree',
     note: 'Business Minor, Early Research Scholars Program, iCons Certificate',
     dates: 'Sept 2023 – Present',

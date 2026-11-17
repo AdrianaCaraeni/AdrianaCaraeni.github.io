@@ -63,8 +63,9 @@ export const testimonials = [
     date: 'Dec 5, 2025',
     rating: '5.0',
     paragraphs: [
-      'I am pleased to strongly recommend Adriana, who I originally taught in my discussion section of Computer Science 240 (Reasoning Under Uncertainty) and later mentored on two projects in the machine learning for education lab at UMass. She is unique in that she is not only highly motivated and skilled, but is a pleasure to work with, and brings a strong level of excitement to any group she is a part of.',
-      'Throughout both projects, Adriana showed impressive technical ability and initiative.',
+      '[Adriana] is not only highly motivated and skilled, but is a pleasure to work with, and brings a strong level of excitement to any group she is a part of.',
+      'Throughout both projects, Adriana showed impressive technical ability and initiative. She designed and tested model prompts, wrote code to process and analyze LLM outputs, and implemented fine-tuning and retrieval methods.',
+      'Adriana is an exceptionally quick learner, and an excellent collaborator.',
     ],
   },
 ]
