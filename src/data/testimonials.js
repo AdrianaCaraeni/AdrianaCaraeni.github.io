@@ -3,6 +3,26 @@
  */
 export const testimonials = [
   {
+    name: 'Matthew Glennon',
+    image: '/matthew_glennon.png',
+    roles: 'Sales Consultant and Marketing and Sales Professor @ UMass Amherst',
+    date: 'Nov 16, 2026',
+    rating: '5.0',
+    paragraphs: [
+      'Her combination of analytical aptitude and marketing acumen is compelling in the world of business and consulting, where understanding complex business challenges and developing effective solutions is essential. It has been a privilege to teach and work with Adriana. I highly recommend her and believe she has tremendous potential to excel in technology, consulting, and corporate strategy.',
+    ],
+  },
+  {
+    name: 'Quinn Geary',
+    image: '/quinn_geary.png',
+    roles: 'Operations and Information Management BBA Candidate',
+    date: 'Nov 15, 2026',
+    rating: '5.0',
+    paragraphs: [
+      'Working with Adriana on the AI Revenue Challenge was a great experience. Her technical expertise in the realm of AI lead us to success when finding solutions to match the case’s given issues. Her presentation skills were also very impressive; she was able to communicate complicated ideas in a manner that allowed advanced AI topics to be understood simply.',
+    ],
+  },
+  {
     name: 'Harsh Patel',
     image: '/harsh_patel.jpg',
     roles: 'Software Engineer and Student Researcher',
