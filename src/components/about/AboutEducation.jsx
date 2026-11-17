@@ -8,21 +8,32 @@ export default function AboutEducation() {
       <div className="about-edu-list">
         {aboutEducation.map((edu) => (
           <article key={edu.school} className="about-edu-card about-edu-card--inner">
+            {edu.level ? <p className="about-edu-level">{edu.level}</p> : null}
             <h4 className="about-edu-school">{edu.school}</h4>
             <p className="about-edu-degree">{edu.degree}</p>
             {edu.note ? <p className="about-edu-note">{edu.note}</p> : null}
             <p className="about-edu-meta">
               {edu.dates}
-              <span className="about-edu-sep"> · </span>
-              {edu.location}
-              <span className="about-edu-sep"> · </span>
-              GPA {edu.gpa}
+              {edu.location ? (
+                <>
+                  <span className="about-edu-sep"> · </span>
+                  {edu.location}
+                </>
+              ) : null}
+              {edu.gpa ? (
+                <>
+                  <span className="about-edu-sep"> · </span>
+                  GPA {edu.gpa}
+                </>
+              ) : null}
             </p>
-            <ul className="about-edu-honors">
-              {edu.honors.map((h) => (
-                <li key={h}>{h}</li>
-              ))}
-            </ul>
+            {edu.honors?.length ? (
+              <ul className="about-edu-honors">
+                {edu.honors.map((h) => (
+                  <li key={h}>{h}</li>
+                ))}
+              </ul>
+            ) : null}
           </article>
         ))}
       </div>

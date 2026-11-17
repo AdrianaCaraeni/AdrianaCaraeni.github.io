@@ -30,7 +30,7 @@ export default function Hero() {
 
           <h1 className="hero-tagline">I build things that matter.</h1>
           <p className="hero-body">
-            Junior at UMass Amherst studying CS, Math and Business (3.96 GPA). I build full-stack apps and AI
+            Junior at UMass Amherst studying CS, Math and Business (3.9+ GPA). I build full-stack apps and AI
             systems - from video translation pipelines serving 1,200+ students to a novel LLM reasoning method
             published through Algoverse. Architected AI tools at the Commonwealth of MA through May 2026, and incoming SWE
             Intern at Fidelity Investments and MIT AI Studio Fellow.

@@ -190,11 +190,30 @@
 }
 
 .about-edu-compact-school {
-  margin: 0 0 2px;
+  margin: 0 0 4px;
   font-family: 'Bricolage Grotesque', sans-serif;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 0.98rem;
   color: var(--text-primary);
+  line-height: 1.35;
+}
+
+.about-edu-compact-school:last-child {
+  margin-bottom: 0;
+}
+
+.about-edu-compact-track {
+  font-weight: 600;
+  color: #e892b6;
+}
+
+.about-edu-level {
+  margin: 0 0 4px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #e892b6;
 }
 
 .about-edu-compact-degree {

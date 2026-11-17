@@ -34,9 +34,13 @@ export default function AboutIntro() {
           </div>
           <div className="about-edu-compact-body">
             <p className="about-edu-compact-label">Education</p>
-            <p className="about-edu-compact-school">University of Massachusetts Amherst</p>
-            <p className="about-edu-compact-degree">
-              Computer Science &amp; Computing Mathematics Dual Degree · Early Research Scholars Program · Business Minor · iCons Certificate
+            <p className="about-edu-compact-school">
+              Georgia Institute of Technology
+              <span className="about-edu-compact-track"> · OMSCS</span>
+            </p>
+            <p className="about-edu-compact-school">
+              University of Massachusetts Amherst
+              <span className="about-edu-compact-track"> · Undergrad</span>
             </p>
           </div>
         </div>

@@ -10,21 +10,32 @@ export const aboutBio = {
 
 export const aboutEducation = [
   {
+    school: 'Georgia Institute of Technology',
+    level: 'Graduate',
+    degree: 'OMSCS — Online Master of Science in Computer Science',
+    note: null,
+    dates: 'January 2027 – Present',
+    location: 'Remote',
+    gpa: null,
+    honors: [],
+  },
+  {
     school: 'University of Massachusetts Amherst',
+    level: 'Undergrad',
     degree: 'Computer Science & Computing Mathematics Dual Degree',
     note: 'Business Minor, Early Research Scholars Program, iCons Certificate',
     dates: 'Sept 2023 – Present',
     location: 'Amherst, MA',
-    gpa: '3.95+',
+    gpa: '3.9+',
     honors: [
       'First Place in the ACM Student Research Competition',
-      'Won the Northeast Intercollegiate Sales Competition with school sales team',
+      'Won the Northeast Intercollegiate Sales Competition w/ UMass Sales Club',
       'NCWIT Collegiate Award National Nominee',
       'Goldwater Scholarship 2025 UMass Nominee',
       "Chancellor's Award Scholarship (4×)",
       'Crowley-Nowick Scholarship (2×)',
       'Phi Kappa Phi Inductee',
-      '152+ credits',
+      '175+ credits',
     ],
   },
 ]
