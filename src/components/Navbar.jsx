@@ -1,12 +1,12 @@
 import { useCallback, useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 
-const SECTION_IDS_HOME = ['hero', 'about', 'experience', 'portfolio', 'testimonials', 'contact']
+const SECTION_IDS_HOME = ['about', 'experience', 'portfolio', 'testimonials', 'contact']
 const NAV_OFFSET = 88
 
 function getActiveSectionId() {
   const y = window.scrollY + NAV_OFFSET
-  let active = 'hero'
+  let active = 'about'
   for (const id of SECTION_IDS_HOME) {
     const el = document.getElementById(id)
     if (!el) continue
@@ -22,7 +22,7 @@ export default function Navbar({ onLogoClick }) {
 
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
-  const [activeSection, setActiveSection] = useState('hero')
+  const [activeSection, setActiveSection] = useState('about')
 
   const updateScroll = useCallback(() => {
     setScrolled(window.scrollY > 50)

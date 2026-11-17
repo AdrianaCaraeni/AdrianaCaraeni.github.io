@@ -14,8 +14,11 @@ export default function Footer() {
       <div className="container-page site-footer-inner">
         <div className="site-footer-brand">
           <span className="site-footer-name">Adriana Caraeni</span>
-          <p className="site-footer-tagline">FinTech · Machine Learning · Artificial Intelligence: LLMs · Full Stack Software Engineering</p>
+          <p className="site-footer-tagline">
+            FinTech · Machine Learning · Artificial Intelligence: LLMs · Full Stack Software Engineering
+          </p>
         </div>
+
         <nav className="site-footer-nav" aria-label="Footer">
           <ul className="site-footer-links">
             {LINKS.map(({ label, href }) => (
@@ -25,6 +28,7 @@ export default function Footer() {
             ))}
           </ul>
         </nav>
+
         <p className="site-footer-copy">&copy; {YEAR} Adriana Caraeni. All rights reserved.</p>
       </div>
     </footer>

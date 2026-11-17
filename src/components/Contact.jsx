@@ -76,8 +76,8 @@ export default function Contact() {
               <h3 className="contact-block-title">Get In Touch</h3>
               <div className="contact-row">
                 <span className="contact-label">EMAIL</span>
-                <a href="mailto:business@adrianacaraeni.com" className="contact-value">
-                  business@adrianacaraeni.com
+                <a href="mailto:acaraeni10@gmail.com" className="contact-value">
+                  acaraeni10@gmail.com
                 </a>
               </div>
               <div className="contact-row">

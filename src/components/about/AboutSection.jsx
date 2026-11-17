@@ -1,8 +1,6 @@
 import { useParallax } from '../../hooks/useParallax.js'
 import AboutBio from './AboutBio.jsx'
-import AboutConnect from './AboutConnect.jsx'
 import AboutEducation from './AboutEducation.jsx'
-import AboutHighlights from './AboutHighlights.jsx'
 import AboutIntro from './AboutIntro.jsx'
 import AboutLangSkills from './AboutLangSkills.jsx'
 
@@ -18,8 +16,6 @@ export default function AboutSection() {
         <div className="about-section-grid">
           <AboutIntro />
           <AboutBio />
-          <AboutHighlights />
-          <AboutConnect />
           <AboutEducation />
           <AboutLangSkills />
         </div>

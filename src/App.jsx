@@ -1,22 +1,19 @@
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import { BrowserRouter, Navigate, Route, Routes, useLocation, useNavigate } from 'react-router-dom'
 import Navbar from './components/Navbar.jsx'
-import Splash from './components/Splash.jsx'
 import HomePage from './pages/HomePage.jsx'
 
 function AppShell() {
-  const [splashKey, setSplashKey] = useState(0)
   const location = useLocation()
   const navigate = useNavigate()
 
   const handleLogoClick = () => {
     if (location.pathname !== '/') {
       navigate('/')
+      return
     }
-    setSplashKey((k) => k + 1)
+    window.scrollTo({ top: 0, behavior: 'smooth' })
   }
-
-  const showSplash = location.pathname === '/'
 
   useEffect(() => {
     if (location.pathname !== '/' || !location.hash) return
@@ -36,7 +33,6 @@ function AppShell() {
 
   return (
     <>
-      {showSplash && <Splash key={splashKey} />}
       <Navbar onLogoClick={handleLogoClick} />
       <main>
         <Routes>

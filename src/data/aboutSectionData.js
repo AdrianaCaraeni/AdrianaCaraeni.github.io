@@ -1,5 +1,5 @@
 export const ABOUT_CONTACT = {
-  email: 'business@adrianacaraeni.com',
+  email: 'acaraeni10@gmail.com',
   phone: '603-667-3584',
   linkedin: 'https://linkedin.com/in/adriana-caraeni/',
   github: 'https://github.com/AdrianaCaraeni',
@@ -7,48 +7,55 @@ export const ABOUT_CONTACT = {
 
 export const SKILL_GROUPS = [
   {
+    id: 'programming',
     title: 'Programming',
-    items: ['Python', 'Java', 'JavaScript', 'TypeScript', 'R', 'C'],
+    items: ['Python', 'Java', 'TypeScript'],
   },
   {
+    id: 'databases',
     title: 'Databases',
     items: ['Supabase', 'MongoDB', 'MySQL', 'PostgreSQL', 'Prisma'],
   },
   {
+    id: 'cloud',
     title: 'Cloud',
     items: ['AWS', 'DigitalOcean', 'Vercel'],
   },
   {
+    id: 'tools',
     title: 'Tools / Technologies',
     items: [
       'Git',
       'Figma',
+      'React',
       'Agile Workflow',
       'Docker',
       'StripeAPI',
-      'LaTeX',
       'Harmonic',
       'Claude Code',
       'Cursor',
     ],
   },
   {
+    id: 'business',
     title: 'Business',
     items: [
-      'SEO',
-      'GEO',
-      'Copywriting',
-      'Management',
-      'Staffing',
       'Consulting',
-      'Customer Relations',
-      'Biz-Ops',
+      'Public Speaking',
+      'Leadership',
+      'Market Sizing',
     ],
   },
-]
-
-export const LANGUAGES = [
-  { name: 'English', level: 'Native or Bilingual' },
-  { name: 'Romanian', level: 'Native or Bilingual' },
-  { name: 'French', level: 'Professional Working' },
+  {
+    id: 'finance',
+    title: 'Finance',
+    items: [
+      'DCF',
+      'Options',
+      'Financial Modeling',
+      'Valuation',
+      'Equity Research',
+      'Excel',
+    ],
+  },
 ]

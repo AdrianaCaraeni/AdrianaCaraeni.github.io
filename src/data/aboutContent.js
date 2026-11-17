@@ -4,9 +4,7 @@
 
 export const aboutBio = {
   paragraphs: [
-    'Adriana Caraeni is a dual-degree Computer Science and Computing Mathematics student at UMass Amherst, maintaining a 3.95+ GPA while pursuing rigorous coursework and research at the intersection of AI and software engineering.',
-    'As an AI researcher and full-stack developer—and a Goldwater Scholarship nominee—she focuses on applied machine learning, LLM reasoning, and shipping tools that solve real problems. She is multilingual in English, Romanian, and French.',
-    'Her experience spans public-sector AI engineering, enterprise FinTech, machine learning, full-stack software engineering, and academic research labs. She has interned with the Commonwealth of Massachusetts (AI co-op), is an incoming software engineering intern at Fidelity Investments, and conducts research with Algoverse AI.',
+    'I’m basically an extroverted nerd. I’m a CS + Math student @ UMass Amherst with three technical internships (Commonwealth of MA, Fidelity, Apps For Good) and award-winning AI research. I also helped UMass win the Northeast Intercollegiate Sales Competition in 2026 and pitch regularly at the Berthiaume Center. I want to build what customers need, and sell it.',
   ],
 }
 
@@ -19,28 +17,14 @@ export const aboutEducation = [
     location: 'Amherst, MA',
     gpa: '3.95+',
     honors: [
+      'First Place in the ACM Student Research Competition',
+      'Won the Northeast Intercollegiate Sales Competition with school sales team',
       'NCWIT Collegiate Award National Nominee',
       'Goldwater Scholarship 2025 UMass Nominee',
       "Chancellor's Award Scholarship (4×)",
       'Crowley-Nowick Scholarship (2×)',
       'Phi Kappa Phi Inductee',
       '152+ credits',
-    ],
-  },
-  {
-    school: 'Lebanon High School',
-    degree: 'High School Diploma',
-    dates: 'Sept 2019 – June 2023',
-    location: 'Lebanon, NH',
-    gpa: '4.46',
-    honors: [
-      'Salutatorian',
-      'Math Team First Place (4×)',
-      'Science Olympiad State Champion (2×)',
-      'French Club President',
-      'Library Advisory Board Director',
-      'ELO Award',
-      '32+ credits',
     ],
   },
 ]
