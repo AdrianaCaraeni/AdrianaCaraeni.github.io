@@ -4,7 +4,7 @@
 
 export const aboutBio = {
   paragraphs: [
-    'I’m basically an extroverted nerd. I’m a CS + Math student @ UMass Amherst with three technical internships (Commonwealth of MA, Fidelity, Apps For Good) and award-winning AI research. I also helped UMass win the Northeast Intercollegiate Sales Competition in 2026 and pitch regularly at the Berthiaume Center. I want to build what customers need, and sell it.',
+    'I’m an extroverted engineer: a CS + Math student at UMass Amherst with three technical internships (Commonwealth of Massachusetts, Fidelity, Apps For Good) and award-winning AI research. I’m just as comfortable in front of a customer as in front of a codebase. I helped UMass win the 2026 Northeast Intercollegiate Sales Competition and pitch regularly at the Berthiaume Center. I want to work where engineering meets the customer: understanding the problem firsthand, building the solution, and making the case for it.',
   ],
 }
 
