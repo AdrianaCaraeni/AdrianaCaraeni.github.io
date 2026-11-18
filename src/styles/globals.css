@@ -248,7 +248,7 @@ button {
 #about,
 #experience,
 #portfolio,
-#testimonials,
+#recommendations,
 #contact {
   scroll-margin-top: calc(var(--nav-height) + 12px);
 }

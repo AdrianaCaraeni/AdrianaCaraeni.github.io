@@ -40,13 +40,13 @@ export default function Testimonials() {
 
   return (
     <section
-      id="testimonials"
+      id="recommendations"
       className="testimonials section-pad"
-      aria-labelledby="testimonials-heading"
+      aria-labelledby="recommendations-heading"
     >
       <div className="container-page">
-        <h2 id="testimonials-heading" className="testimonials-heading">
-          Testimonials
+        <h2 id="recommendations-heading" className="testimonials-heading">
+          Recommendations
         </h2>
 
         <div className="testimonials-carousel">
@@ -54,7 +54,7 @@ export default function Testimonials() {
             type="button"
             className="testimonials-arrow testimonials-arrow--prev"
             onClick={goPrev}
-            aria-label="Previous testimonial"
+            aria-label="Previous recommendation"
           >
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <path
@@ -71,7 +71,7 @@ export default function Testimonials() {
             className="testimonials-card surface-card"
             tabIndex={0}
             role="article"
-            aria-label={`Testimonial from ${item.name}`}
+            aria-label={`Recommendation from ${item.name}`}
             onClick={(e) => e.currentTarget.focus()}
             onKeyDown={(e) => {
               if (e.key === 'ArrowLeft') {
@@ -142,7 +142,7 @@ export default function Testimonials() {
             type="button"
             className="testimonials-arrow testimonials-arrow--next"
             onClick={goNext}
-            aria-label="Next testimonial"
+            aria-label="Next recommendation"
           >
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <path
@@ -156,14 +156,14 @@ export default function Testimonials() {
           </button>
         </div>
 
-        <div className="testimonials-dots" role="tablist" aria-label="Choose testimonial">
+        <div className="testimonials-dots" role="tablist" aria-label="Choose recommendation">
           {testimonials.map((_, i) => (
             <button
               key={i}
               type="button"
               role="tab"
               aria-selected={i === index}
-              aria-label={`Testimonial ${i + 1} of ${n}`}
+              aria-label={`Recommendation ${i + 1} of ${n}`}
               className={`testimonials-dot ${i === index ? 'is-active' : ''}`}
               onClick={() => goTo(i)}
             />
