@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 
-const SECTION_IDS_HOME = ['about', 'experience', 'portfolio', 'testimonials', 'contact']
+const SECTION_IDS_HOME = ['about', 'experience', 'projects', 'portfolio', 'testimonials', 'contact']
 const NAV_OFFSET = 88
 
 function getActiveSectionId() {
@@ -99,6 +99,15 @@ export default function Navbar({ onLogoClick }) {
                 onClick={handleSectionClick('experience')}
               >
                 Experience
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/#projects"
+                className={sectionLinkClass('projects')}
+                onClick={handleSectionClick('projects')}
+              >
+                Projects
               </Link>
             </li>
             <li>

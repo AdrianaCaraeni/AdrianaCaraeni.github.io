@@ -3,6 +3,7 @@ const YEAR = new Date().getFullYear()
 const LINKS = [
   { label: 'About', href: '#about' },
   { label: 'Experience', href: '#experience' },
+  { label: 'Projects', href: '#projects' },
   { label: 'Portfolio', href: '#portfolio' },
   { label: 'Testimonials', href: '#testimonials' },
   { label: 'Contact', href: '#contact' },
