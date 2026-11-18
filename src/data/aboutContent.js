@@ -29,7 +29,7 @@ export const aboutEducation = [
     gpa: '3.9+',
     honors: [
       'First Place in the ACM Student Research Competition',
-      'Won the Northeast Intercollegiate Sales Competition w/ UMass Sales Club',
+      'Won the Northeast Intercollegiate Sales Competition',
       'NCWIT Collegiate Award National Nominee',
       'Goldwater Scholarship 2025 UMass Nominee',
       "Chancellor's Award Scholarship (4×)",
